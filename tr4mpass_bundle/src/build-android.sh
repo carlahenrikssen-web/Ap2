@@ -83,8 +83,14 @@ s_irecv() { rm -rf libirecovery-m; git clone --depth 1 https://github.com/libimo
 
 s_glue() { build_lib libimobiledevice-glue 1.0.0 libimobiledevice/libimobiledevice-glue; }
 
-s_imd() { build_lib libimobiledevice 1.3.0 libimobiledevice/libimobiledevice \
-  --without-cython ac_cv_lib_pthread_pthread_once=yes; }
+# libimobiledevice: 1.3.0 tag (2020) predates libplist 2.3.0 and redefines
+# PLIST_FORMAT_XML/BINARY enumerators already provided by modern libplist, causing
+# a fatal compile error. Upstream confirms building from master resolves this.
+s_imd() { rm -rf libimobiledevice-m; git clone --depth 1 https://github.com/libimobiledevice/libimobiledevice.git libimobiledevice-m || return 1
+  cd libimobiledevice-m && NOCONFIGURE=1 ./autogen.sh \
+    && ./configure --host="$HOST" --prefix="$PREFIX" --enable-static --disable-shared \
+       --without-cython ac_cv_lib_pthread_pthread_once=yes \
+    && make -j"$JOBS" && make install; }
 
 stage openssl  s_openssl  || true
 stage libusb   s_libusb   || true
@@ -92,6 +98,6 @@ stage libplist s_plist    || true
 stage curl     s_curl     || true
 stage libssh2  s_ssh2     || true
 stage usbmuxd  s_usbmuxd  || true
-stage irecovery s_irecv   || true
 stage glue     s_glue     || true
+stage irecovery s_irecv   || true
 stage imobiledevice s_imd || true
