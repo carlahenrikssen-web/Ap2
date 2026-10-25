@@ -40,9 +40,24 @@ fetch libusb-1.0.27 https://github.com/libusb/libusb/releases/download/v1.0.27/l
 build_lib libplist 2.6.0 libimobiledevice/libplist || true
 build_lib libimobiledevice-glue 1.0.0 libimobiledevice/libimobiledevice-glue || true
 build_lib libusbmuxd 2.0.2 libimobiledevice/libusbmuxd || true
-build_lib libirecovery 1.0.1 libimobiledevice/libirecovery || true
+
+# curl for Android (tatsu requires libcurl.pc)
+fetch curl-8.4.0 https://curl.se/download/curl-8.4.0.tar.xz \
+ && ( cd curl-8.4.0 && ./configure --host="$HOST" --prefix="$PREFIX" \
+      --enable-static --disable-shared --with-openssl="$PREFIX" \
+      --without-libpsl --without-libidn2 --without-brotli --without-zstd \
+      --without-nghttp2 --disable-ldap --disable-ldaps \
+      && make -j"$JOBS" && make install ) || echo "FAIL curl (continuing)"
+
+# irecovery: --without-tools avoids the readline requirement
+build_lib libirecovery 1.0.1 libimobiledevice/libirecovery --without-tools || true
+
+# tatsu: needs libcurl (built above)
 build_lib libtatsu 1.0.3 libimobiledevice/libtatsu || true
-build_lib libimobiledevice 1.3.0 libimobiledevice/libimobiledevice --without-cython || true
+
+# imobiledevice: bionic has pthread in libc -> pre-seed the pthread_once check
+build_lib libimobiledevice 1.3.0 libimobiledevice/libimobiledevice \
+  --without-cython ac_cv_lib_pthread_pthread_once=yes || true
 
 echo "===== pkg-config visibility ====="
 LIBS="libusb-1.0 libplist-2.0 libimobiledevice-glue-1.0 libusbmuxd-2.0 libirecovery-1.0 libtatsu-1.0 libimobiledevice-1.0"
