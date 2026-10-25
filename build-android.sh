@@ -46,9 +46,12 @@ s_libusb() { fetch libusb-1.0.27 https://github.com/libusb/libusb/releases/downl
     --enable-static --disable-shared --disable-udev && make -j"$JOBS" && make install; }
 
 # libplist 2.3.0: 2.6.0 clashes with libimobiledevice 1.3.0 (PLIST_FORMAT_* redefinition)
-# --without-cython: configure was linking test Python ext against host x86_64 libpython
-# against the aarch64 NDK cross-compiler and failing; bindings aren't needed for this build.
-s_plist() { build_lib libplist 2.3.0 libimobiledevice/libplist --without-cython; }
+# --without-cython alone does NOT reliably skip the Python devel check in this release's
+# configure (confirmed by CI log: full Python probe still ran and fatally failed trying
+# to link host x86_64 libpython against the aarch64 cross toolchain). Forcing CYTHON=false
+# pre-empts AC_PATH_PROG's own detection, so AC_PROG_CYTHON short-circuits before the
+# Python-devel/link check ever runs.
+s_plist() { build_lib libplist 2.3.0 libimobiledevice/libplist --without-cython CYTHON=false; }
 
 s_curl() { fetch curl-8.4.0 https://curl.se/download/curl-8.4.0.tar.xz || return 1
   cd curl-8.4.0 && ./configure --host="$HOST" --prefix="$PREFIX" \
