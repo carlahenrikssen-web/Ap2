@@ -1,0 +1,44 @@
+##### START libusbmuxd
+##### OK libusbmuxd
+##### START libirecovery
+##### OK libirecovery
+##### START libtatsu
+##### OK libtatsu
+##### START libimobiledevice
+##### FAIL libimobiledevice  (/data/data/com.termux/files/home/41/logs/libimobiledevice.log)
+>>> referenced by libcrypto.a(libcrypto-lib-e_capi.obj):(_capi_find_key)
+>>> referenced by libcrypto.a(libcrypto-lib-e_capi.obj):(_capi_load_ssl_client_cert)
+>>> referenced 1 more times
+
+ld.lld: error: undefined symbol: __declspec(dllimport) _CertOpenStore@20
+>>> referenced by libcrypto.a(libcrypto-lib-e_capi.obj):(_capi_open_store)
+
+ld.lld: error: undefined symbol: __declspec(dllimport) _CertFindCertificateInStore@24
+>>> referenced by libcrypto.a(libcrypto-lib-e_capi.obj):(_capi_find_cert)
+
+ld.lld: error: undefined symbol: __declspec(dllimport) _CertDuplicateCertificateContext@4
+>>> referenced by libcrypto.a(libcrypto-lib-e_capi.obj):(_capi_load_ssl_client_cert)
+
+ld.lld: error: undefined symbol: __declspec(dllimport) _CertGetCertificateContextProperty@16
+>>> referenced by libcrypto.a(libcrypto-lib-e_capi.obj):(_capi_cert_get_fname)
+>>> referenced by libcrypto.a(libcrypto-lib-e_capi.obj):(_capi_cert_get_fname)
+>>> referenced by libcrypto.a(libcrypto-lib-e_capi.obj):(_capi_get_prov_info)
+>>> referenced 1 more times
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+4 warnings generated.
+make[2]: *** [Makefile:845: idevicesyslog.exe] Error 1
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/tools'
+make[1]: *** [Makefile:485: all-recursive] Error 1
+make[1]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice'
+make: *** [Makefile:415: all] Error 2
+########## SUMMARY ##########
+OK       openssl 3.0.15
+OK       libcurl 8.11.1
+OK       libusb-1.0 1.0.30
+OK       libssh2 1.11.1
+OK       libplist-2.0 2.8.0
+OK       libimobiledevice-glue-1.0 1.3.3-1-g10ddafa
+OK       libusbmuxd-2.0 2.1.1-2-g93eb168
+OK       libirecovery-1.0 1.3.1-12-g93c117c
+OK       libtatsu-1.0 1.0.5-6-ge7d6ad1
+MISSING  libimobiledevice-1.0

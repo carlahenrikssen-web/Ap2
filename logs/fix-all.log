@@ -1,0 +1,10 @@
+===== 1. complete openssl headers =====
+HDR MISSING opensslv.h
+HDR MISSING configuration.h
+HDR OK      opensslconf.h
+HDR MISSING err.h
+HDR MISSING ssl.h
+HDR OK      evp.h
+HDR OK      hmac.h
+HDR OK      sha.h
+OPENSSL_HEADERS INCOMPLETE

@@ -1,0 +1,29 @@
+Making install in libusb
+make[1]: Entering directory '/data/data/com.termux/files/home/src/libusb/libusb'
+  GEN      regen-version-describe
+make  install-am
+make[2]: Entering directory '/data/data/com.termux/files/home/src/libusb/libusb'
+  GEN      regen-version-describe
+  CC       core.lo
+  RC       libusb-1.0.lo
+  CCLD     libusb-1.0.la
+make[3]: Entering directory '/data/data/com.termux/files/home/src/libusb/libusb'
+  GEN      regen-version-describe
+ /data/data/com.termux/files/usr/bin/mkdir -p '/data/data/com.termux/files/home/win32/lib'
+ /data/data/com.termux/files/usr/bin/bash ../libtool   --mode=install /data/data/com.termux/files/usr/bin/install -c   libusb-1.0.la '/data/data/com.termux/files/home/win32/lib'
+libtool: install: /data/data/com.termux/files/usr/bin/install -c .libs/libusb-1.0.lai /data/data/com.termux/files/home/win32/lib/libusb-1.0.la
+libtool: install: /data/data/com.termux/files/usr/bin/install -c .libs/libusb-1.0.a /data/data/com.termux/files/home/win32/lib/libusb-1.0.a
+libtool: install: chmod 644 /data/data/com.termux/files/home/win32/lib/libusb-1.0.a
+libtool: install: i686-w64-mingw32-ranlib /data/data/com.termux/files/home/win32/lib/libusb-1.0.a
+ /data/data/com.termux/files/usr/bin/mkdir -p '/data/data/com.termux/files/home/win32/include/libusb-1.0'
+ /data/data/com.termux/files/usr/bin/install -c -m 644 libusb.h '/data/data/com.termux/files/home/win32/include/libusb-1.0'
+make[3]: Leaving directory '/data/data/com.termux/files/home/src/libusb/libusb'
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libusb/libusb'
+make[1]: Leaving directory '/data/data/com.termux/files/home/src/libusb/libusb'
+make[1]: Entering directory '/data/data/com.termux/files/home/src/libusb'
+make[2]: Entering directory '/data/data/com.termux/files/home/src/libusb'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /data/data/com.termux/files/usr/bin/mkdir -p '/data/data/com.termux/files/home/win32/lib/pkgconfig'
+ /data/data/com.termux/files/usr/bin/install -c -m 644 libusb-1.0.pc '/data/data/com.termux/files/home/win32/lib/pkgconfig'
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libusb'
+make[1]: Leaving directory '/data/data/com.termux/files/home/src/libusb'

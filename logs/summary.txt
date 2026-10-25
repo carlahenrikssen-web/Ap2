@@ -1,0 +1,22 @@
+########## SUMMARY ##########
+FAIL  openssl
+OK  libusb
+OK  libplist
+FAIL  glue
+FAIL  libusbmuxd
+FAIL  libirecovery
+OK  curl
+OK  tatsu
+FAIL  libimobiledevice
+OK  libssh2
+
+curl headers: PRESENT
+
+MISSING  openssl
+OK       libusb-1.0 1.0.30
+OK       libplist-2.0 1.0
+MISSING  libirecovery-1.0
+MISSING  libtatsu-1.0
+MISSING  libimobiledevice-1.0
+OK       libssh2 1.11.1
+OK       libcurl 8.0.0

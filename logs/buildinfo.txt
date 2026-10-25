@@ -1,0 +1,13 @@
+# This is a generated file.  Do not edit.
+buildinfo.configure.tool: configure
+buildinfo.configure.args:  '--host=i686-w64-mingw32' '--build=aarch64-unknown-linux-android24' '--prefix=/data/data/com.termux/files/home/win32' '--disable-shared' '--enable-static' '--with-schannel' '--without-libpsl' '--without-zlib' '--without-brotli' '--without-zstd' '--disable-ldap' '--without-libidn2' '--without-nghttp2' '--without-librtmp' '--disable-manual' 'build_alias=aarch64-unknown-linux-android24' 'host_alias=i686-w64-mingw32' 'CFLAGS=-O2 -std=gnu17' 'LDFLAGS=-L/data/data/com.termux/files/home/win32/lib' 'CPPFLAGS=-I/data/data/com.termux/files/home/win32/include'
+buildinfo.host: aarch64-unknown-linux-android24
+buildinfo.host.cpu: aarch64
+buildinfo.host.os: linux-android24
+buildinfo.target: i686-w64-mingw32
+buildinfo.target.cpu: i686
+buildinfo.target.os: mingw32
+buildinfo.target.flags: WIN32 MINGW CROSS
+buildinfo.compiler: CLANG
+buildinfo.compiler.version: 21.1
+buildinfo.sysroot: 

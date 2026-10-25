@@ -1,0 +1,60 @@
+
+===== 0 shims =====
+SHIM_DIR=/data/data/com.termux/files/home/bsrc/win32shim
+
+===== 1 openssl =====
+HDR OK      opensslv.h
+HDR OK      configuration.h
+HDR OK      opensslconf.h
+HDR OK      err.h
+HDR OK      ssl.h
+HDR OK      crypto.h
+HDR OK      evp.h
+OPENSSL_HEADERS OK
+OPENSSL_PC OK 3.0.15
+pkg-config openssl: OK
+
+===== 1b curl check =====
+-rw-r--r--. 1 u0_a424 u0_a424 1080902 Oct 24 20:25 /data/data/com.termux/files/home/win32/lib/libcurl.a
+-rwxr-xr-x. 1 u0_a424 u0_a424    1000 Oct 24 20:25 /data/data/com.termux/files/home/win32/lib/libcurl.la
+LIBCURL OK
+
+===== 2 libimobiledevice 1.4.0 =====
+Using vendor zip
+IMD_CONFIGURE OK
+checking for libusbmuxd-2.0 >= 2.0.2... yes
+checking for libplist-2.0 >= 2.3.0... yes
+checking for libimobiledevice-glue-1.0 >= 1.3.0... yes
+checking for libtatsu-1.0 >= 1.0.3... yes
+checking for openssl >= 0.9.8... yes
+IMD_MAKE_FAILED
+159:ld.lld: error: undefined symbol: __declspec(dllimport) _idevice_set_debug_level
+163:ld.lld: error: undefined symbol: __declspec(dllimport) _idevice_new_with_options
+167:ld.lld: error: undefined symbol: __declspec(dllimport) _lockdownd_client_new
+171:ld.lld: error: undefined symbol: __declspec(dllimport) _idevice_free
+176:ld.lld: error: undefined symbol: __declspec(dllimport) _idevice_get_device_list_extended
+180:ld.lld: error: undefined symbol: __declspec(dllimport) _idevice_device_list_extended_free
+184:ld.lld: error: undefined symbol: __declspec(dllimport) _lockdownd_get_device_name
+188:ld.lld: error: undefined symbol: __declspec(dllimport) _lockdownd_client_free
+191:clang: error: linker command failed with exit code 1 (use -v to see invocation)
+194:ld.lld: error: undefined symbol: __declspec(dllimport) _idevice_set_debug_level
+198:ld.lld: error: undefined symbol: __declspec(dllimport) _idevice_get_device_list_extended
+202:ld.lld: error: undefined symbol: __declspec(dllimport) _idevice_device_list_extended_free
+206:ld.lld: error: undefined symbol: __declspec(dllimport) _idevice_events_subscribe
+210:ld.lld: error: undefined symbol: __declspec(dllimport) _idevice_events_unsubscribe
+214:ld.lld: error: undefined symbol: __declspec(dllimport) _bt_packet_logger_client_free
+220:ld.lld: error: undefined symbol: __declspec(dllimport) _idevice_free
+226:ld.lld: error: undefined symbol: __declspec(dllimport) _idevice_new_with_options
+230:ld.lld: error: undefined symbol: __declspec(dllimport) _lockdownd_client_new_with_handshake
+234:ld.lld: error: undefined symbol: __declspec(dllimport) _bt_packet_logger_client_start_service
+238:ld.lld: error: undefined symbol: __declspec(dllimport) _bt_packet_logger_start_capture
+241:clang: error: linker command failed with exit code 1 (use -v to see invocation)
+242:ld.lld: error: undefined symbol: __declspec(dllimport) _idevice_set_debug_level
+246:ld.lld: error: undefined symbol: __declspec(dllimport) _idevice_new_with_options
+250:ld.lld: error: undefined symbol: __declspec(dllimport) _lockdownd_client_new_with_handshake
+254:ld.lld: error: undefined symbol: __declspec(dllimport) _idevice_free
+259:ld.lld: error: undefined symbol: __declspec(dllimport) _lockdownd_get_device_name
+263:ld.lld: error: undefined symbol: __declspec(dllimport) _lockdownd_set_value
+267:ld.lld: error: undefined symbol: __declspec(dllimport) _lockdownd_client_free
+271:clang: error: linker command failed with exit code 1 (use -v to see invocation)
+273:ld.lld: error: undefined symbol: __declspec(dllimport) _idevice_set_debug_level

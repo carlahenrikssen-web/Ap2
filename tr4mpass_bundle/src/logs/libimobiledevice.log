@@ -1,0 +1,485 @@
+libtoolize: putting auxiliary files in '.'.
+libtoolize: linking file './ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: linking file 'm4/libtool.m4'
+libtoolize: linking file 'm4/ltoptions.m4'
+libtoolize: linking file 'm4/ltsugar.m4'
+libtoolize: linking file 'm4/ltversion.m4'
+libtoolize: linking file 'm4/lt~obsolete.m4'
+configure.ac:38: installing './compile'
+configure.ac:41: installing './config.guess'
+configure.ac:41: installing './config.sub'
+configure.ac:6: installing './install-sh'
+configure.ac:6: installing './missing'
+common/Makefile.am: installing './depcomp'
+checking for a BSD-compatible install... /data/data/com.termux/files/usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for i686-w64-mingw32-strip... i686-w64-mingw32-strip
+checking for a race-free mkdir -p... /data/data/com.termux/files/usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '10424' is supported by ustar format... yes
+checking whether GID '10424' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking for i686-w64-mingw32-gcc... i686-w64-mingw32-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.exe
+checking for suffix of executables... .exe
+checking whether we are cross compiling... yes
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether i686-w64-mingw32-gcc accepts -g... yes
+checking for i686-w64-mingw32-gcc option to enable C23 features... unsupported
+checking for i686-w64-mingw32-gcc option to enable C11 features... none needed
+checking whether i686-w64-mingw32-gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of i686-w64-mingw32-gcc... gcc3
+checking for i686-w64-mingw32-g++... i686-w64-mingw32-g++
+checking whether the compiler supports GNU C++... yes
+checking whether i686-w64-mingw32-g++ accepts -g... yes
+checking dependency style of i686-w64-mingw32-g++... gcc3
+checking build system type... aarch64-unknown-linux-android24
+checking host system type... i686-w64-mingw32
+checking how to print strings... printf
+checking for a sed that does not truncate output... /data/data/com.termux/files/usr/bin/sed
+checking for grep that handles long lines and -e... /data/data/com.termux/files/usr/bin/grep
+checking for egrep... /data/data/com.termux/files/usr/bin/grep -E
+checking for fgrep... /data/data/com.termux/files/usr/bin/grep -F
+checking for ld used by i686-w64-mingw32-gcc... /data/data/com.termux/files/usr/bin/i686-w64-mingw32-ld
+checking if the linker (/data/data/com.termux/files/usr/bin/i686-w64-mingw32-ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /data/data/com.termux/files/usr/bin/i686-w64-mingw32-nm -B
+checking the name lister (/data/data/com.termux/files/usr/bin/i686-w64-mingw32-nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 32768
+checking how to convert aarch64-unknown-linux-android24 file names to i686-w64-mingw32 format... func_convert_file_nix_to_w32
+checking how to convert aarch64-unknown-linux-android24 file names to toolchain format... func_convert_file_noop
+checking for /data/data/com.termux/files/usr/bin/i686-w64-mingw32-ld option to reload object files... -r
+checking for file... :
+checking for i686-w64-mingw32-objdump... i686-w64-mingw32-objdump
+checking how to recognize dependent libraries... file_magic file format (pei*-i386(.*architecture: i386)?|pe-arm-wince|pe-x86-64|pe-aarch64)
+checking for i686-w64-mingw32-dlltool... i686-w64-mingw32-dlltool
+checking how to associate runtime and link libraries... func_cygming_dll_for_implib
+checking for i686-w64-mingw32-ranlib... i686-w64-mingw32-ranlib
+checking for i686-w64-mingw32-ar... i686-w64-mingw32-ar
+checking for archiver @FILE support... @
+checking for i686-w64-mingw32-strip... (cached) i686-w64-mingw32-strip
+checking command to parse /data/data/com.termux/files/usr/bin/i686-w64-mingw32-nm -B output from i686-w64-mingw32-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /data/data/com.termux/files/usr/bin/dd
+checking how to truncate binary pipes... /data/data/com.termux/files/usr/bin/dd bs=4096 count=1
+checking for i686-w64-mingw32-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... no
+checking which variant of shared library versioning to provide... (default) aix
+checking for objdir... .libs
+checking if i686-w64-mingw32-gcc supports -fno-rtti -fno-exceptions... yes
+checking for i686-w64-mingw32-gcc option to produce PIC... -DDLL_EXPORT -DPIC
+checking if i686-w64-mingw32-gcc PIC flag -DDLL_EXPORT -DPIC works... yes
+checking if i686-w64-mingw32-gcc static flag -static works... yes
+checking if i686-w64-mingw32-gcc supports -c -o file.o... yes
+checking if i686-w64-mingw32-gcc supports -c -o file.o... (cached) yes
+checking whether the i686-w64-mingw32-gcc linker (/data/data/com.termux/files/usr/bin/i686-w64-mingw32-ld) supports shared libraries... yes
+checking dynamic linker characteristics... Win32 ld.exe
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... i686-w64-mingw32-g++ -E
+checking for ld used by i686-w64-mingw32-g++... /data/data/com.termux/files/usr/bin/i686-w64-mingw32-ld
+checking if the linker (/data/data/com.termux/files/usr/bin/i686-w64-mingw32-ld) is GNU ld... yes
+checking whether the i686-w64-mingw32-g++ linker (/data/data/com.termux/files/usr/bin/i686-w64-mingw32-ld) supports shared libraries... yes
+checking for i686-w64-mingw32-g++ option to produce PIC... -DDLL_EXPORT -DPIC
+checking if i686-w64-mingw32-g++ PIC flag -DDLL_EXPORT -DPIC works... yes
+checking if i686-w64-mingw32-g++ static flag -static works... yes
+checking if i686-w64-mingw32-g++ supports -c -o file.o... yes
+checking if i686-w64-mingw32-g++ supports -c -o file.o... (cached) yes
+checking whether the i686-w64-mingw32-g++ linker (/data/data/com.termux/files/usr/bin/i686-w64-mingw32-ld) supports shared libraries... yes
+checking dynamic linker characteristics... Win32 ld.exe
+checking how to hardcode library paths into programs... immediate
+checking for i686-w64-mingw32-pkg-config... no
+checking for pkg-config... /data/data/com.termux/files/usr/bin/pkg-config
+configure: WARNING: using cross tools not prefixed with host triplet
+checking pkg-config is at least version 0.9.0... yes
+checking for libusbmuxd-2.0 >= 2.0.2... yes
+checking for libplist-2.0 >= 2.3.0... yes
+checking for libimobiledevice-glue-1.0 >= 1.3.0... yes
+checking for libtatsu-1.0 >= 1.0.3... yes
+checking for readline >= 1.0... no
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for sys/time.h... yes
+checking for an ANSI C-conforming const... yes
+checking for size_t... yes
+checking for ssize_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint8_t... yes
+checking for asprintf... yes
+checking for strcasecmp... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strndup... no
+checking for stpcpy... no
+checking for vasprintf... yes
+checking for getifaddrs... no
+checking for gettimeofday... yes
+checking for localtime_r... no
+checking for endian.h... no
+checking whether byte ordering is bigendian... no
+checking for i686-w64-mingw32-gcc options to detect undeclared functions... none needed
+checking for i686-w64-mingw32-gcc options to ignore future-version functions... none needed
+checking whether plist_from_json is declared... yes
+checking for plist_new_unix_date... yes
+checking for platform-specific build settings... mingw32
+checking for struct dirent.d_type... no
+checking for openssl >= 0.9.8... yes
+checking for supported compiler flags...  -Wall -Wextra -Wmissing-declarations -Wredundant-decls -Wshadow -Wpointer-arith -Wwrite-strings -Wswitch-default -Wno-unused-parameter -fsigned-char -fvisibility=hidden
+checking for i686-w64-mingw32-gcc option to support large files... -D_FILE_OFFSET_BITS=64
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating 3rd_party/Makefile
+config.status: creating 3rd_party/ed25519/Makefile
+config.status: creating 3rd_party/libsrp6a-sha512/Makefile
+config.status: creating common/Makefile
+config.status: creating src/Makefile
+config.status: creating src/libimobiledevice-1.0.pc
+config.status: creating include/Makefile
+config.status: creating tools/Makefile
+config.status: creating cython/Makefile
+config.status: creating docs/Makefile
+config.status: creating doxygen.cfg
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+Configuration for libimobiledevice 1.4.0-9-gfa0f791:
+-------------------------------------------
+
+  Install prefix: .........: /data/data/com.termux/files/home/win32
+  Debug code ..............: no
+  Python bindings .........: no
+  SSL support backend .....: OpenSSL
+
+  Now type 'make' to build libimobiledevice 1.4.0-9-gfa0f791,
+  and then 'make install' for installation.
+
+make  all-recursive
+make[1]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice'
+Making all in 3rd_party
+make[2]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice/3rd_party'
+Making all in ed25519
+make[3]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice/3rd_party/ed25519'
+  CC       fe.lo
+  CC       add_scalar.lo
+  CC       keypair.lo
+  CC       key_exchange.lo
+  CC       ge.lo
+  CC       seed.lo
+  CC       sign.lo
+  CC       sc.lo
+  CC       sha512.lo
+  CC       verify.lo
+  CCLD     libed25519.la
+make[3]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/3rd_party/ed25519'
+Making all in libsrp6a-sha512
+make[3]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice/3rd_party/libsrp6a-sha512'
+  CC       t_conv.lo
+  CC       t_math.lo
+  CC       srp.lo
+  CC       srp6a_sha512_client.lo
+  CC       cstr.lo
+  CC       t_truerand.lo
+  CC       t_misc.lo
+  CC       t_sha.lo
+t_misc.c:84:16: warning: '__p__environ' redeclared without 'dllimport' attribute: previous 'dllimport' ignored [-Winconsistent-dllimport]
+   84 | extern char ** environ;
+      |                ^
+/data/data/com.termux/files/usr/opt/llvm-mingw-w64/i686-w64-mingw32/include/stdlib.h:662:17: note: expanded from macro 'environ'
+  662 | #define environ _environ
+      |                 ^
+/data/data/com.termux/files/usr/opt/llvm-mingw-w64/i686-w64-mingw32/include/stdlib.h:225:21: note: expanded from macro '_environ'
+  225 | #define _environ (* __p__environ())
+      |                     ^
+/data/data/com.termux/files/usr/opt/llvm-mingw-w64/i686-w64-mingw32/include/stdlib.h:221:27: note: previous declaration is here
+  221 |   _CRTIMP char ***__cdecl __p__environ(void);
+      |                           ^
+/data/data/com.termux/files/usr/opt/llvm-mingw-w64/i686-w64-mingw32/include/stdlib.h:221:3: note: previous attribute is here
+  221 |   _CRTIMP char ***__cdecl __p__environ(void);
+      |   ^
+/data/data/com.termux/files/usr/opt/llvm-mingw-w64/i686-w64-mingw32/include/_mingw.h:52:40: note: expanded from macro '_CRTIMP'
+   52 | #      define _CRTIMP  __attribute__ ((__dllimport__))
+      |                                        ^
+1 warning generated.
+  CCLD     libsrp6a-sha512.la
+make[3]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/3rd_party/libsrp6a-sha512'
+make[3]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice/3rd_party'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/3rd_party'
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/3rd_party'
+Making all in common
+make[2]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice/common'
+  CC       debug.lo
+  CC       userpref.lo
+  CCLD     libinternalcommon.la
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/common'
+Making all in src
+make[2]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice/src'
+  CC       device_link_service.lo
+  CC       lockdown-cu.lo
+  CC       service.lo
+  CC       idevice.lo
+  CC       property_list_service.lo
+  CC       lockdown.lo
+  CC       afc.lo
+  CC       file_relay.lo
+  CC       notification_proxy.lo
+  CC       installation_proxy.lo
+  CC       sbservices.lo
+  CC       mobile_image_mounter.lo
+  CC       screenshotr.lo
+  CC       mobilesync.lo
+  CC       mobilebackup.lo
+  CC       house_arrest.lo
+  CC       mobilebackup2.lo
+  CC       misagent.lo
+  CC       restore.lo
+  CC       diagnostics_relay.lo
+  CC       heartbeat.lo
+  CC       debugserver.lo
+  CC       webinspector.lo
+  CC       mobileactivation.lo
+  CC       preboard.lo
+  CC       companion_proxy.lo
+  CC       reverse_proxy.lo
+  CC       syslog_relay.lo
+  CC       ostrace.lo
+  CC       bt_packet_logger.lo
+  CCLD     libimobiledevice-1.0.la
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/src'
+Making all in include
+make[2]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice/include'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/include'
+Making all in tools
+make[2]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice/tools'
+  CC       idevicebtlogger-idevicebtlogger.o
+  CC       ideviceinfo-ideviceinfo.o
+  CC       idevice_id-idevice_id.o
+  CC       ideviceimagemounter-ideviceimagemounter.o
+  CC       idevicename-idevicename.o
+  CC       idevicepair-idevicepair.o
+  CC       idevicesyslog-idevicesyslog.o
+  CC       idevicescreenshot-idevicescreenshot.o
+  CC       idevicedate-idevicedate.o
+  CC       ideviceenterrecovery-ideviceenterrecovery.o
+  CC       idevicebackup-idevicebackup.o
+  CC       idevicebackup2-idevicebackup2.o
+  CC       ideviceprovision-ideviceprovision.o
+  CC       idevicedebugserverproxy-idevicedebugserverproxy.o
+  CC       idevicediagnostics-idevicediagnostics.o
+  CC       idevicedebug-idevicedebug.o
+  CC       idevicedevmodectl-idevicedevmodectl.o
+  CC       idevicenotificationproxy-idevicenotificationproxy.o
+idevicedebugserverproxy.c:149:2: warning: comparison of integers of different signs: 'SOCKET' (aka 'unsigned int') and 'int' [-Wsign-compare]
+  149 |         FD_SET(client_fd, &fds);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+/data/data/com.termux/files/usr/opt/llvm-mingw-w64/i686-w64-mingw32/include/psdk_inc/_fd_types.h:77:40: note: expanded from macro 'FD_SET'
+   77 |                 if (((fd_set *)(set))->fd_array[__i] == (fd)) {         \
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^   ~~
+  CC       idevicecrashreport-idevicecrashreport.o
+1 warning generated.
+  CC       idevicesetlocation-idevicesetlocation.o
+  CC       afcclient-afcclient.o
+  CCLD     idevicebtlogger.exe
+  CCLD     idevice_id.exe
+  CCLD     ideviceinfo.exe
+  CCLD     idevicename.exe
+  CCLD     idevicepair.exe
+  CCLD     idevicesyslog.exe
+  CCLD     ideviceimagemounter.exe
+afcclient.c:48:9: warning: 'S_IFMT' macro redefined [-Wmacro-redefined]
+   48 | #define S_IFMT          0170000         /* [XSI] type of file mask */
+      |         ^
+/data/data/com.termux/files/usr/opt/llvm-mingw-w64/i686-w64-mingw32/include/sys/stat.h:89:9: note: previous definition is here
+   89 | #define S_IFMT _S_IFMT
+      |         ^
+afcclient.c:49:9: warning: 'S_IFIFO' macro redefined [-Wmacro-redefined]
+   49 | #define S_IFIFO         0010000         /* [XSI] named pipe (fifo) */
+      |         ^
+/data/data/com.termux/files/usr/opt/llvm-mingw-w64/i686-w64-mingw32/include/sys/stat.h:96:9: note: previous definition is here
+   96 | #define S_IFIFO         _S_IFIFO
+      |         ^
+afcclient.c:50:9: warning: 'S_IFCHR' macro redefined [-Wmacro-redefined]
+   50 | #define S_IFCHR         0020000         /* [XSI] character special */
+      |         ^
+/data/data/com.termux/files/usr/opt/llvm-mingw-w64/i686-w64-mingw32/include/sys/stat.h:91:9: note: previous definition is here
+   91 | #define S_IFCHR _S_IFCHR
+      |         ^
+afcclient.c:51:9: warning: 'S_IFBLK' macro redefined [-Wmacro-redefined]
+   51 | #define S_IFBLK         0060000         /* [XSI] block special */
+      |         ^
+/data/data/com.termux/files/usr/opt/llvm-mingw-w64/i686-w64-mingw32/include/sys/stat.h:97:9: note: previous definition is here
+   97 | #define S_IFBLK         _S_IFBLK
+      |         ^
+  CCLD     idevicescreenshot.exe
+  CCLD     ideviceenterrecovery.exe
+  CCLD     idevicedate.exe
+  CCLD     idevicebackup.exe
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_get_node_type (defined in libplist-2.0.a(plist.o)) [LNK4217]
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_get_key_val (defined in libplist-2.0.a(plist.o)) [LNK4217]
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_get_real_val (defined in libplist-2.0.a(plist.o)) [LNK4217]
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_bool_val_is_true (defined in libplist-2.0.a(plist.o)) [LNK4217]
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_get_uint_val (defined in libplist-2.0.a(plist.o)) [LNK4217]
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_get_string_ptr (defined in libplist-2.0.a(plist.o)) [LNK4217]
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_get_unix_date_val (defined in libplist-2.0.a(plist.o)) [LNK4217]
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_array_get_size (defined in libplist-2.0.a(plist.o)) [LNK4217]
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_array_new_iter (defined in libplist-2.0.a(plist.o)) [LNK4217]
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_array_next_item (defined in libplist-2.0.a(plist.o)) [LNK4217]
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_dict_get_size (defined in libplist-2.0.a(plist.o)) [LNK4217]
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_dict_new_iter (defined in libplist-2.0.a(plist.o)) [LNK4217]
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_dict_next_item (defined in libplist-2.0.a(plist.o)) [LNK4217]
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_dict_item_get_key (defined in libplist-2.0.a(plist.o)) [LNK4217]
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_get_data_ptr (defined in libplist-2.0.a(plist.o)) [LNK4217]
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_new_bool (defined in libplist-2.0.a(plist.o)) [LNK4217]
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_new_unix_date (defined in libplist-2.0.a(plist.o)) [LNK4217]
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_new_real (defined in libplist-2.0.a(plist.o)) [LNK4217]
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_new_dict (defined in libplist-2.0.a(plist.o)) [LNK4217]
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_get_string_val (defined in libplist-2.0.a(plist.o)) [LNK4217]
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_free (defined in libplist-2.0.a(plist.o)) [LNK4217]
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_dict_set_item (defined in libplist-2.0.a(plist.o)) [LNK4217]
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_new_array (defined in libplist-2.0.a(plist.o)) [LNK4217]
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_array_append_item (defined in libplist-2.0.a(plist.o)) [LNK4217]
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_new_string (defined in libplist-2.0.a(plist.o)) [LNK4217]
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_new_uint (defined in libplist-2.0.a(plist.o)) [LNK4217]
+ld.lld: warning: libimobiledevice-glue-1.0.a(opack.o): locally defined symbol imported: _plist_new_data (defined in libplist-2.0.a(plist.o)) [LNK4217]
+  CCLD     idevicebackup2.exe
+  CCLD     ideviceprovision.exe
+4 warnings generated.
+  CCLD     idevicedebugserverproxy.exe
+  CCLD     idevicedebug.exe
+  CCLD     idevicediagnostics.exe
+  CCLD     idevicedevmodectl.exe
+  CCLD     idevicenotificationproxy.exe
+  CCLD     idevicecrashreport.exe
+  CCLD     idevicesetlocation.exe
+  CCLD     afcclient.exe
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/tools'
+Making all in docs
+make[2]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice/docs'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/docs'
+make[2]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice'
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice'
+make[1]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice'
+Making install in 3rd_party
+make[1]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice/3rd_party'
+Making install in ed25519
+make[2]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice/3rd_party/ed25519'
+make[3]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice/3rd_party/ed25519'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/3rd_party/ed25519'
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/3rd_party/ed25519'
+Making install in libsrp6a-sha512
+make[2]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice/3rd_party/libsrp6a-sha512'
+make[3]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice/3rd_party/libsrp6a-sha512'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/3rd_party/libsrp6a-sha512'
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/3rd_party/libsrp6a-sha512'
+make[2]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice/3rd_party'
+make[3]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice/3rd_party'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/3rd_party'
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/3rd_party'
+make[1]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/3rd_party'
+Making install in common
+make[1]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice/common'
+make[2]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice/common'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/common'
+make[1]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/common'
+Making install in src
+make[1]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice/src'
+make[2]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice/src'
+ /data/data/com.termux/files/usr/bin/mkdir -p '/data/data/com.termux/files/home/win32/lib'
+ /data/data/com.termux/files/usr/bin/bash ../libtool   --mode=install /data/data/com.termux/files/usr/bin/install -c   libimobiledevice-1.0.la '/data/data/com.termux/files/home/win32/lib'
+libtool: install: /data/data/com.termux/files/usr/bin/install -c .libs/libimobiledevice-1.0.lai /data/data/com.termux/files/home/win32/lib/libimobiledevice-1.0.la
+libtool: install: /data/data/com.termux/files/usr/bin/install -c .libs/libimobiledevice-1.0.a /data/data/com.termux/files/home/win32/lib/libimobiledevice-1.0.a
+libtool: install: chmod 644 /data/data/com.termux/files/home/win32/lib/libimobiledevice-1.0.a
+libtool: install: i686-w64-mingw32-ranlib /data/data/com.termux/files/home/win32/lib/libimobiledevice-1.0.a
+ /data/data/com.termux/files/usr/bin/mkdir -p '/data/data/com.termux/files/home/win32/lib/pkgconfig'
+ /data/data/com.termux/files/usr/bin/install -c -m 644 libimobiledevice-1.0.pc '/data/data/com.termux/files/home/win32/lib/pkgconfig'
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/src'
+make[1]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/src'
+Making install in include
+make[1]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice/include'
+make[2]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice/include'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /data/data/com.termux/files/usr/bin/mkdir -p '/data/data/com.termux/files/home/win32/include'
+ /data/data/com.termux/files/usr/bin/mkdir -p '/data/data/com.termux/files/home/win32/include/libimobiledevice'
+ /data/data/com.termux/files/usr/bin/install -c -m 644  libimobiledevice/libimobiledevice.h libimobiledevice/lockdown.h libimobiledevice/afc.h libimobiledevice/file_relay.h libimobiledevice/notification_proxy.h libimobiledevice/installation_proxy.h libimobiledevice/sbservices.h libimobiledevice/mobile_image_mounter.h libimobiledevice/screenshotr.h libimobiledevice/mobilesync.h libimobiledevice/mobilebackup.h libimobiledevice/house_arrest.h libimobiledevice/mobilebackup2.h libimobiledevice/misagent.h libimobiledevice/restore.h libimobiledevice/webinspector.h libimobiledevice/heartbeat.h libimobiledevice/diagnostics_relay.h libimobiledevice/debugserver.h libimobiledevice/syslog_relay.h libimobiledevice/ostrace.h libimobiledevice/mobileactivation.h libimobiledevice/preboard.h libimobiledevice/companion_proxy.h libimobiledevice/reverse_proxy.h libimobiledevice/bt_packet_logger.h libimobiledevice/property_list_service.h libimobiledevice/service.h '/data/data/com.termux/files/home/win32/include/libimobiledevice'
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/include'
+make[1]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/include'
+Making install in tools
+make[1]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice/tools'
+make[2]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice/tools'
+ /data/data/com.termux/files/usr/bin/mkdir -p '/data/data/com.termux/files/home/win32/bin'
+  /data/data/com.termux/files/usr/bin/bash ../libtool   --mode=install /data/data/com.termux/files/usr/bin/install -c idevicebtlogger.exe idevice_id.exe ideviceinfo.exe idevicename.exe idevicepair.exe idevicesyslog.exe ideviceimagemounter.exe idevicescreenshot.exe ideviceenterrecovery.exe idevicedate.exe idevicebackup.exe idevicebackup2.exe ideviceprovision.exe idevicedebugserverproxy.exe idevicediagnostics.exe idevicedebug.exe idevicedevmodectl.exe idevicenotificationproxy.exe idevicecrashreport.exe idevicesetlocation.exe afcclient.exe '/data/data/com.termux/files/home/win32/bin'
+libtool: install: /data/data/com.termux/files/usr/bin/install -c idevicebtlogger.exe /data/data/com.termux/files/home/win32/bin/idevicebtlogger.exe
+libtool: install: /data/data/com.termux/files/usr/bin/install -c idevice_id.exe /data/data/com.termux/files/home/win32/bin/idevice_id.exe
+libtool: install: /data/data/com.termux/files/usr/bin/install -c ideviceinfo.exe /data/data/com.termux/files/home/win32/bin/ideviceinfo.exe
+libtool: install: /data/data/com.termux/files/usr/bin/install -c idevicename.exe /data/data/com.termux/files/home/win32/bin/idevicename.exe
+libtool: install: /data/data/com.termux/files/usr/bin/install -c idevicepair.exe /data/data/com.termux/files/home/win32/bin/idevicepair.exe
+libtool: install: /data/data/com.termux/files/usr/bin/install -c idevicesyslog.exe /data/data/com.termux/files/home/win32/bin/idevicesyslog.exe
+libtool: install: /data/data/com.termux/files/usr/bin/install -c ideviceimagemounter.exe /data/data/com.termux/files/home/win32/bin/ideviceimagemounter.exe
+libtool: install: /data/data/com.termux/files/usr/bin/install -c idevicescreenshot.exe /data/data/com.termux/files/home/win32/bin/idevicescreenshot.exe
+libtool: install: /data/data/com.termux/files/usr/bin/install -c ideviceenterrecovery.exe /data/data/com.termux/files/home/win32/bin/ideviceenterrecovery.exe
+libtool: install: /data/data/com.termux/files/usr/bin/install -c idevicedate.exe /data/data/com.termux/files/home/win32/bin/idevicedate.exe
+libtool: install: /data/data/com.termux/files/usr/bin/install -c idevicebackup.exe /data/data/com.termux/files/home/win32/bin/idevicebackup.exe
+libtool: install: /data/data/com.termux/files/usr/bin/install -c idevicebackup2.exe /data/data/com.termux/files/home/win32/bin/idevicebackup2.exe
+libtool: install: /data/data/com.termux/files/usr/bin/install -c ideviceprovision.exe /data/data/com.termux/files/home/win32/bin/ideviceprovision.exe
+libtool: install: /data/data/com.termux/files/usr/bin/install -c idevicedebugserverproxy.exe /data/data/com.termux/files/home/win32/bin/idevicedebugserverproxy.exe
+libtool: install: /data/data/com.termux/files/usr/bin/install -c idevicediagnostics.exe /data/data/com.termux/files/home/win32/bin/idevicediagnostics.exe
+libtool: install: /data/data/com.termux/files/usr/bin/install -c idevicedebug.exe /data/data/com.termux/files/home/win32/bin/idevicedebug.exe
+libtool: install: /data/data/com.termux/files/usr/bin/install -c idevicedevmodectl.exe /data/data/com.termux/files/home/win32/bin/idevicedevmodectl.exe
+libtool: install: /data/data/com.termux/files/usr/bin/install -c idevicenotificationproxy.exe /data/data/com.termux/files/home/win32/bin/idevicenotificationproxy.exe
+libtool: install: /data/data/com.termux/files/usr/bin/install -c idevicecrashreport.exe /data/data/com.termux/files/home/win32/bin/idevicecrashreport.exe
+libtool: install: /data/data/com.termux/files/usr/bin/install -c idevicesetlocation.exe /data/data/com.termux/files/home/win32/bin/idevicesetlocation.exe
+libtool: install: /data/data/com.termux/files/usr/bin/install -c afcclient.exe /data/data/com.termux/files/home/win32/bin/afcclient.exe
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/tools'
+make[1]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/tools'
+Making install in docs
+make[1]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice/docs'
+make[2]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice/docs'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /data/data/com.termux/files/usr/bin/mkdir -p '/data/data/com.termux/files/home/win32/share/man/man1'
+ /data/data/com.termux/files/usr/bin/install -c -m 644 idevice_id.1 ideviceinfo.1 idevicebtlogger.1 idevicesyslog.1 idevicebackup.1 idevicebackup2.1 ideviceimagemounter.1 idevicescreenshot.1 idevicepair.1 ideviceenterrecovery.1 idevicedate.1 ideviceprovision.1 idevicedebugserverproxy.1 idevicediagnostics.1 idevicecrashreport.1 idevicename.1 idevicedebug.1 idevicedevmodectl.1 idevicenotificationproxy.1 idevicesetlocation.1 afcclient.1 '/data/data/com.termux/files/home/win32/share/man/man1'
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/docs'
+make[1]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice/docs'
+make[1]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice'
+make[2]: Entering directory '/data/data/com.termux/files/home/src/libimobiledevice'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice'
+make[1]: Leaving directory '/data/data/com.termux/files/home/src/libimobiledevice'

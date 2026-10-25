@@ -1,0 +1,517 @@
+=== deps visible to pkg-config ===
+found    libusbmuxd-2.0 2.1.1
+found    libplist-2.0 2.8.0
+found    libimobiledevice-glue-1.0 1.3.3
+found    libtatsu-1.0 1.0.5
+found    libcurl 8.0.0
+
+=== attempt 1: master tree (lib + headers only) ===
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for i686-w64-mingw32-strip... i686-w64-mingw32-strip
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking for i686-w64-mingw32-gcc... i686-w64-mingw32-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.exe
+checking for suffix of executables... .exe
+checking whether we are cross compiling... yes
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether i686-w64-mingw32-gcc accepts -g... yes
+checking for i686-w64-mingw32-gcc option to enable C11 features... none needed
+checking whether i686-w64-mingw32-gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of i686-w64-mingw32-gcc... gcc3
+checking for i686-w64-mingw32-g++... i686-w64-mingw32-g++
+checking whether the compiler supports GNU C++... yes
+checking whether i686-w64-mingw32-g++ accepts -g... yes
+checking for i686-w64-mingw32-g++ option to enable C++11 features... none needed
+checking dependency style of i686-w64-mingw32-g++... gcc3
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... i686-w64-mingw32
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by i686-w64-mingw32-gcc... /usr/bin/i686-w64-mingw32-ld
+checking if the linker (/usr/bin/i686-w64-mingw32-ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/i686-w64-mingw32-nm -B
+checking the name lister (/usr/bin/i686-w64-mingw32-nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 3145728
+checking how to convert x86_64-pc-linux-gnu file names to i686-w64-mingw32 format... func_convert_file_nix_to_w32
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/i686-w64-mingw32-ld option to reload object files... -r
+checking for i686-w64-mingw32-file... no
+checking for file... file
+configure: WARNING: using cross tools not prefixed with host triplet
+checking for i686-w64-mingw32-objdump... i686-w64-mingw32-objdump
+checking how to recognize dependent libraries... file_magic ^x86 archive import|^x86 DLL
+checking for i686-w64-mingw32-dlltool... i686-w64-mingw32-dlltool
+checking how to associate runtime and link libraries... func_cygming_dll_for_implib
+checking for i686-w64-mingw32-ar... i686-w64-mingw32-ar
+checking for archiver @FILE support... @
+checking for i686-w64-mingw32-strip... (cached) i686-w64-mingw32-strip
+checking for i686-w64-mingw32-ranlib... i686-w64-mingw32-ranlib
+checking command to parse /usr/bin/i686-w64-mingw32-nm -B output from i686-w64-mingw32-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for i686-w64-mingw32-mt... no
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... no
+checking for objdir... .libs
+checking if i686-w64-mingw32-gcc supports -fno-rtti -fno-exceptions... no
+checking for i686-w64-mingw32-gcc option to produce PIC... -DDLL_EXPORT -DPIC
+checking if i686-w64-mingw32-gcc PIC flag -DDLL_EXPORT -DPIC works... yes
+checking if i686-w64-mingw32-gcc static flag -static works... yes
+checking if i686-w64-mingw32-gcc supports -c -o file.o... yes
+checking if i686-w64-mingw32-gcc supports -c -o file.o... (cached) yes
+checking whether the i686-w64-mingw32-gcc linker (/usr/bin/i686-w64-mingw32-ld) supports shared libraries... yes
+checking dynamic linker characteristics... Win32 ld.exe
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... i686-w64-mingw32-g++ -E
+checking for ld used by i686-w64-mingw32-g++... /usr/bin/i686-w64-mingw32-ld
+checking if the linker (/usr/bin/i686-w64-mingw32-ld) is GNU ld... yes
+checking whether the i686-w64-mingw32-g++ linker (/usr/bin/i686-w64-mingw32-ld) supports shared libraries... yes
+checking for i686-w64-mingw32-g++ option to produce PIC... -DDLL_EXPORT -DPIC
+checking if i686-w64-mingw32-g++ PIC flag -DDLL_EXPORT -DPIC works... yes
+checking if i686-w64-mingw32-g++ static flag -static works... yes
+checking if i686-w64-mingw32-g++ supports -c -o file.o... yes
+checking if i686-w64-mingw32-g++ supports -c -o file.o... (cached) yes
+checking whether the i686-w64-mingw32-g++ linker (/usr/bin/i686-w64-mingw32-ld) supports shared libraries... yes
+checking dynamic linker characteristics... Win32 ld.exe
+checking how to hardcode library paths into programs... immediate
+checking for i686-w64-mingw32-pkg-config... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for libusbmuxd-2.0 >= 2.0.2... yes
+checking for libplist-2.0 >= 2.3.0... yes
+checking for libimobiledevice-glue-1.0 >= 1.3.0... yes
+checking for libtatsu-1.0 >= 1.0.3... yes
+checking for readline >= 1.0... no
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for sys/time.h... yes
+checking for an ANSI C-conforming const... yes
+checking for size_t... yes
+checking for ssize_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint8_t... yes
+checking for asprintf... yes
+checking for strcasecmp... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strndup... no
+checking for stpcpy... no
+checking for vasprintf... yes
+checking for getifaddrs... no
+checking for gettimeofday... yes
+checking for localtime_r... no
+checking for endian.h... no
+checking whether byte ordering is bigendian... no
+checking for i686-w64-mingw32-gcc options needed to detect all undeclared functions... none needed
+checking whether plist_from_json is declared... yes
+checking for plist_new_unix_date... yes
+checking for platform-specific build settings... mingw32
+checking for struct dirent.d_type... no
+checking for openssl >= 0.9.8... yes
+checking for supported compiler flags...  -Wall -Wextra -Wmissing-declarations -Wredundant-decls -Wshadow -Wpointer-arith -Wwrite-strings -Wswitch-default -Wno-unused-parameter -fsigned-char -fvisibility=hidden
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... 64
+checking whether make supports nested variables... (cached) yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating 3rd_party/Makefile
+config.status: creating 3rd_party/ed25519/Makefile
+config.status: creating 3rd_party/libsrp6a-sha512/Makefile
+config.status: creating common/Makefile
+config.status: creating src/Makefile
+config.status: creating src/libimobiledevice-1.0.pc
+config.status: creating include/Makefile
+config.status: creating tools/Makefile
+config.status: creating cython/Makefile
+config.status: creating docs/Makefile
+config.status: creating doxygen.cfg
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+Configuration for libimobiledevice 1.4.0:
+-------------------------------------------
+
+  Install prefix: .........: /home/runner/win32
+  Debug code ..............: no
+  Python bindings .........: no
+  SSL support backend .....: OpenSSL
+
+  Now type 'make' to build libimobiledevice 1.4.0,
+  and then 'make install' for installation.
+
+make  all-recursive
+make[1]: Entering directory '/home/runner/bsrc/libimobiledevice'
+Making all in 3rd_party
+make[2]: Entering directory '/home/runner/bsrc/libimobiledevice/3rd_party'
+Making all in ed25519
+make[3]: Entering directory '/home/runner/bsrc/libimobiledevice/3rd_party/ed25519'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/runner/bsrc/libimobiledevice/3rd_party/ed25519'
+Making all in libsrp6a-sha512
+make[3]: Entering directory '/home/runner/bsrc/libimobiledevice/3rd_party/libsrp6a-sha512'
+  CC       t_math.lo
+  CC       t_misc.lo
+  CC       cstr.lo
+  CC       srp.lo
+t_math.c:36:11: fatal error: openssl/opensslv.h: No such file or directory
+   36 | # include "openssl/opensslv.h"
+      |           ^~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[3]: *** [Makefile:437: t_math.lo] Error 1
+make[3]: *** Waiting for unfinished jobs....
+In file included from t_misc.c:46:
+t_sha.h:41:10: fatal error: openssl/err.h: No such file or directory
+   41 | #include <openssl/err.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+make[3]: *** [Makefile:437: t_misc.lo] Error 1
+make[3]: Leaving directory '/home/runner/bsrc/libimobiledevice/3rd_party/libsrp6a-sha512'
+make[2]: *** [Makefile:417: all-recursive] Error 1
+make[2]: Leaving directory '/home/runner/bsrc/libimobiledevice/3rd_party'
+make[1]: *** [Makefile:470: all-recursive] Error 1
+make[1]: Leaving directory '/home/runner/bsrc/libimobiledevice'
+make: *** [Makefile:400: all] Error 2
+make: Entering directory '/home/runner/bsrc/libimobiledevice/src'
+  CC       idevice.lo
+idevice.c:45:10: fatal error: openssl/err.h: No such file or directory
+   45 | #include <openssl/err.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:620: idevice.lo] Error 1
+make: Leaving directory '/home/runner/bsrc/libimobiledevice/src'
+IMD attempt 1 failed - dumping last 20 lines
+#define HAVE_STRING_H 1
+#define HAVE_SYS_TIME_H 1
+#define HAVE_ASPRINTF 1
+#define HAVE_STRCASECMP 1
+#define HAVE_STRDUP 1
+#define HAVE_STRERROR 1
+#define HAVE_VASPRINTF 1
+#define HAVE_GETTIMEOFDAY 1
+#define __LITTLE_ENDIAN 1234
+#define __BIG_ENDIAN 4321
+#define __BYTE_ORDER 1234
+#define HAVE_PLIST_JSON 1
+#define HAVE_PLIST_UNIX_DATE 1
+#define WINVER 0x0501
+#define HAVE_OPENSSL 1
+#define HAVE_WIRELESS_PAIRING 1
+#define STRIP_DEBUG_CODE 1
+#define _FILE_OFFSET_BITS 64
+
+configure: exit 0
+
+=== attempt 2: 1.3.0 release tarball (no libtatsu dependency) ===
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for i686-w64-mingw32-strip... i686-w64-mingw32-strip
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking for i686-w64-mingw32-gcc... i686-w64-mingw32-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.exe
+checking for suffix of executables... .exe
+checking whether we are cross compiling... yes
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether i686-w64-mingw32-gcc accepts -g... yes
+checking for i686-w64-mingw32-gcc option to accept ISO C89... none needed
+checking whether i686-w64-mingw32-gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of i686-w64-mingw32-gcc... gcc3
+checking for i686-w64-mingw32-g++... i686-w64-mingw32-g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether i686-w64-mingw32-g++ accepts -g... yes
+checking dependency style of i686-w64-mingw32-g++... gcc3
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... i686-w64-mingw32
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by i686-w64-mingw32-gcc... /usr/bin/i686-w64-mingw32-ld
+checking if the linker (/usr/bin/i686-w64-mingw32-ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/i686-w64-mingw32-nm -B
+checking the name lister (/usr/bin/i686-w64-mingw32-nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 3145728
+checking how to convert x86_64-pc-linux-gnu file names to i686-w64-mingw32 format... func_convert_file_nix_to_w32
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/i686-w64-mingw32-ld option to reload object files... -r
+checking for i686-w64-mingw32-objdump... i686-w64-mingw32-objdump
+checking how to recognize dependent libraries... file_magic ^x86 archive import|^x86 DLL
+checking for i686-w64-mingw32-dlltool... i686-w64-mingw32-dlltool
+checking how to associate runtime and link libraries... func_cygming_dll_for_implib
+checking for i686-w64-mingw32-ar... i686-w64-mingw32-ar
+checking for archiver @FILE support... @
+checking for i686-w64-mingw32-strip... (cached) i686-w64-mingw32-strip
+checking for i686-w64-mingw32-ranlib... i686-w64-mingw32-ranlib
+checking command to parse /usr/bin/i686-w64-mingw32-nm -B output from i686-w64-mingw32-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for i686-w64-mingw32-mt... no
+checking for mt... mt
+configure: WARNING: using cross tools not prefixed with host triplet
+checking if mt is a manifest tool... no
+checking how to run the C preprocessor... i686-w64-mingw32-gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... no
+checking for objdir... .libs
+checking if i686-w64-mingw32-gcc supports -fno-rtti -fno-exceptions... no
+checking for i686-w64-mingw32-gcc option to produce PIC... -DDLL_EXPORT -DPIC
+checking if i686-w64-mingw32-gcc PIC flag -DDLL_EXPORT -DPIC works... yes
+checking if i686-w64-mingw32-gcc static flag -static works... yes
+checking if i686-w64-mingw32-gcc supports -c -o file.o... yes
+checking if i686-w64-mingw32-gcc supports -c -o file.o... (cached) yes
+checking whether the i686-w64-mingw32-gcc linker (/usr/bin/i686-w64-mingw32-ld) supports shared libraries... yes
+checking dynamic linker characteristics... Win32 ld.exe
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... i686-w64-mingw32-g++ -E
+checking for ld used by i686-w64-mingw32-g++... /usr/bin/i686-w64-mingw32-ld
+checking if the linker (/usr/bin/i686-w64-mingw32-ld) is GNU ld... yes
+checking whether the i686-w64-mingw32-g++ linker (/usr/bin/i686-w64-mingw32-ld) supports shared libraries... yes
+checking for i686-w64-mingw32-g++ option to produce PIC... -DDLL_EXPORT -DPIC
+checking if i686-w64-mingw32-g++ PIC flag -DDLL_EXPORT -DPIC works... yes
+checking if i686-w64-mingw32-g++ static flag -static works... yes
+checking if i686-w64-mingw32-g++ supports -c -o file.o... yes
+checking if i686-w64-mingw32-g++ supports -c -o file.o... (cached) yes
+checking whether the i686-w64-mingw32-g++ linker (/usr/bin/i686-w64-mingw32-ld) supports shared libraries... yes
+checking dynamic linker characteristics... Win32 ld.exe
+checking how to hardcode library paths into programs... immediate
+checking for i686-w64-mingw32-pkg-config... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for libusbmuxd... yes
+checking for libplist... yes
+checking for ANSI C header files... (cached) yes
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking gcrypt.h usability... no
+checking gcrypt.h presence... no
+checking for gcrypt.h... no
+checking for an ANSI C-conforming const... yes
+checking for size_t... yes
+checking for ssize_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint8_t... yes
+checking for asprintf... yes
+checking for strcasecmp... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strndup... no
+checking for stpcpy... no
+checking for vasprintf... yes
+checking endian.h usability... no
+checking endian.h presence... no
+checking for endian.h... no
+checking whether byte ordering is bigendian... no
+checking for platform-specific build settings... mingw32
+checking for struct dirent.d_type... no
+checking for openssl... yes
+checking for supported compiler flags...  -Wall -Wextra -Wmissing-declarations -Wredundant-decls -Wshadow -Wpointer-arith -Wwrite-strings -Wswitch-default -Wno-unused-parameter -fsigned-char -fvisibility=hidden
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... 64
+checking whether make supports nested variables... (cached) yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating common/Makefile
+config.status: creating src/Makefile
+config.status: creating src/libimobiledevice-1.0.pc
+config.status: creating include/Makefile
+config.status: creating tools/Makefile
+config.status: creating cython/Makefile
+config.status: creating docs/Makefile
+config.status: creating doxygen.cfg
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+Configuration for libimobiledevice 1.3.0:
+-------------------------------------------
+
+  Install prefix: .........: /home/runner/win32
+  Debug code ..............: no
+  Python bindings .........: no
+  SSL support backend .....: OpenSSL
+
+  Now type 'make' to build libimobiledevice 1.3.0,
+  and then 'make install' for installation.
+
+make  all-recursive
+make[1]: Entering directory '/home/runner/bsrc/libimobiledevice-1.3.0'
+Making all in common
+make[2]: Entering directory '/home/runner/bsrc/libimobiledevice-1.3.0/common'
+  CC       socket.lo
+  CC       thread.lo
+  CC       debug.lo
+  CC       userpref.lo
+In file included from /home/runner/win32/include/openssl/macros.h:14,
+                 from /home/runner/win32/include/openssl/bn.h:15,
+                 from userpref.c:40:
+/home/runner/win32/include/openssl/opensslconf.h:14:11: fatal error: openssl/configuration.h: No such file or directory
+   14 | # include <openssl/configuration.h>
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from debug.c:36:
+../src/idevice.h:30:10: fatal error: openssl/ssl.h: No such file or directory
+   30 | #include <openssl/ssl.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [Makefile:461: debug.lo] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [Makefile:461: userpref.lo] Error 1
+thread.c: In function ‘thread_new’:
+thread.c:30:43: warning: cast between incompatible function types from ‘thread_func_t’ {aka ‘void * (*)(void *)’} to ‘DWORD (__attribute__((stdcall)) *)(void *)’ {aka ‘long unsigned int (__attribute__((stdcall)) *)(void *)’} [-Wcast-function-type]
+   30 |         HANDLE th = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)thread_func, data, 0, NULL);
+      |                                           ^
+socket.c: In function ‘_sockaddr_in6_scope_id’:
+socket.c:361:13: warning: implicit declaration of function ‘getifaddrs’ [-Wimplicit-function-declaration]
+  361 |         if (getifaddrs(&ifaddr) == -1) {
+      |             ^~~~~~~~~~
+socket.c:367:50: error: invalid use of undefined type ‘struct ifaddrs’
+  367 |         for (ifa = ifaddr; ifa != NULL; ifa = ifa->ifa_next) {
+      |                                                  ^~
+socket.c:369:24: error: invalid use of undefined type ‘struct ifaddrs’
+  369 |                 if (ifa->ifa_addr == NULL) {
+      |                        ^~
+socket.c:374:24: error: invalid use of undefined type ‘struct ifaddrs’
+  374 |                 if (ifa->ifa_addr->sa_family != AF_INET6) {
+      |                        ^~
+socket.c:379:25: error: invalid use of undefined type ‘struct ifaddrs’
+  379 |                 if ((ifa->ifa_flags & IFF_UP) == 0) {
+      |                         ^~
+socket.c:384:25: error: invalid use of undefined type ‘struct ifaddrs’
+  384 |                 if ((ifa->ifa_flags & IFF_RUNNING) == 0) {
+      |                         ^~
+socket.c:384:39: error: ‘IFF_RUNNING’ undeclared (first use in this function)
+  384 |                 if ((ifa->ifa_flags & IFF_RUNNING) == 0) {
+      |                                       ^~~~~~~~~~~
+socket.c:384:39: note: each undeclared identifier is reported only once for each function it appears in
+socket.c:388:73: error: invalid use of undefined type ‘struct ifaddrs’
+  388 |                 struct sockaddr_in6* addr_in = (struct sockaddr_in6*)ifa->ifa_addr;
+      |                                                                         ^~
+socket.c:412:25: error: invalid use of undefined type ‘struct ifaddrs’
+  412 |                 if ((ifa->ifa_flags & IFF_LOOPBACK) != 0) {
+      |                         ^~
+socket.c:430:9: warning: implicit declaration of function ‘freeifaddrs’ [-Wimplicit-function-declaration]
+  430 |         freeifaddrs(ifaddr);
+      |         ^~~~~~~~~~~
+make[2]: *** [Makefile:461: socket.lo] Error 1
+make[2]: Leaving directory '/home/runner/bsrc/libimobiledevice-1.3.0/common'
+make[1]: *** [Makefile:454: all-recursive] Error 1
+make[1]: Leaving directory '/home/runner/bsrc/libimobiledevice-1.3.0'
+make: *** [Makefile:384: all] Error 2
+make: Entering directory '/home/runner/bsrc/libimobiledevice-1.3.0/src'
+  CC       idevice.lo
+idevice.c:35:10: fatal error: openssl/err.h: No such file or directory
+   35 | #include <openssl/err.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:592: idevice.lo] Error 1
+make: Leaving directory '/home/runner/bsrc/libimobiledevice-1.3.0/src'
+IMD_RESULT FAILED_BOTH
+----- master config.log tail -----
+#define HAVE_UNISTD_H 1
+#define STDC_HEADERS 1
+#define LT_OBJDIR ".libs/"
+#define HAVE_STDINT_H 1
+#define HAVE_STDLIB_H 1
+#define HAVE_STRING_H 1
+#define HAVE_SYS_TIME_H 1
+#define HAVE_ASPRINTF 1
+#define HAVE_STRCASECMP 1
+#define HAVE_STRDUP 1
+#define HAVE_STRERROR 1
+#define HAVE_VASPRINTF 1
+#define HAVE_GETTIMEOFDAY 1
+#define __LITTLE_ENDIAN 1234
+#define __BIG_ENDIAN 4321
+#define __BYTE_ORDER 1234
+#define HAVE_PLIST_JSON 1
+#define HAVE_PLIST_UNIX_DATE 1
+#define WINVER 0x0501
+#define HAVE_OPENSSL 1
+#define HAVE_WIRELESS_PAIRING 1
+#define STRIP_DEBUG_CODE 1
+#define _FILE_OFFSET_BITS 64
+
+configure: exit 0
+----- 1.3.0 config.log tail -----
+#define HAVE_MEMORY_H 1
+#define HAVE_STRINGS_H 1
+#define HAVE_INTTYPES_H 1
+#define HAVE_STDINT_H 1
+#define HAVE_UNISTD_H 1
+#define LT_OBJDIR ".libs/"
+#define STDC_HEADERS 1
+#define HAVE_STDINT_H 1
+#define HAVE_STDLIB_H 1
+#define HAVE_STRING_H 1
+#define HAVE_ASPRINTF 1
+#define HAVE_STRCASECMP 1
+#define HAVE_STRDUP 1
+#define HAVE_STRERROR 1
+#define HAVE_VASPRINTF 1
+#define __LITTLE_ENDIAN 1234
+#define __BIG_ENDIAN 4321
+#define __BYTE_ORDER 1234
+#define WINVER 0x0501
+#define HAVE_OPENSSL 1
+#define STRIP_DEBUG_CODE 1
+#define HAVE_FVISIBILITY 1
+#define _FILE_OFFSET_BITS 64
+
+configure: exit 0

@@ -1,0 +1,50 @@
+##### START openssl
+##### OK openssl
+##### START curl
+##### OK curl
+##### START libusb
+##### OK libusb
+##### START libssh2
+##### OK libssh2
+##### START libplist
+##### OK libplist
+##### START glue
+##### OK glue
+##### START libusbmuxd
+##### FAIL libusbmuxd  (/data/data/com.termux/files/home/41/logs/libusbmuxd.log)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/data/com.termux/files/usr/opt/llvm-mingw-w64/i686-w64-mingw32/include/psdk_inc/_fd_types.h:77:40: note: expanded from macro 'FD_SET'
+   77 |                 if (((fd_set *)(set))->fd_array[__i] == (fd)) {         \
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^   ~~
+inetcat.c:270:5: warning: comparison of integers of different signs: 'SOCKET' (aka 'unsigned int') and 'int' [-Wsign-compare]
+  270 |     FD_SET(devfd, &fds);
+      |     ^~~~~~~~~~~~~~~~~~~
+/data/data/com.termux/files/usr/opt/llvm-mingw-w64/i686-w64-mingw32/include/psdk_inc/_fd_types.h:77:40: note: expanded from macro 'FD_SET'
+   77 |                 if (((fd_set *)(set))->fd_array[__i] == (fd)) {         \
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^   ~~
+1 warning generated.
+3 warnings generated.
+  CCLD     inetcat.exe
+  CCLD     iproxy.exe
+lld: error: unable to find library -lIphlpapi
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+lld: error: unable to find library -lIphlpapi
+make[2]: *** [Makefile:418: inetcat.exe] Error 1
+make[2]: *** Waiting for unfinished jobs....
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[2]: *** [Makefile:422: iproxy.exe] Error 1
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libusbmuxd/tools'
+make[1]: *** [Makefile:436: all-recursive] Error 1
+make[1]: Leaving directory '/data/data/com.termux/files/home/src/libusbmuxd'
+make: *** [Makefile:368: all] Error 2
+########## SUMMARY ##########
+OK       openssl 3.0.15
+OK       libcurl 8.11.1
+OK       libusb-1.0 1.0.30
+OK       libssh2 1.11.1
+OK       libplist-2.0 2.8.0
+OK       libimobiledevice-glue-1.0 1.3.3-1-g10ddafa
+MISSING  libusbmuxd-2.0
+MISSING  libirecovery-1.0
+MISSING  libtatsu-1.0
+MISSING  libimobiledevice-1.0

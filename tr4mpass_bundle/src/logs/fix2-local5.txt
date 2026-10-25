@@ -1,0 +1,127 @@
+
+===== 0 shims =====
+SHIM_DIR=/data/data/com.termux/files/home/bsrc/win32shim
+
+===== 1 openssl =====
+HDR OK      opensslv.h
+HDR OK      configuration.h
+HDR OK      opensslconf.h
+HDR OK      err.h
+HDR OK      ssl.h
+HDR OK      crypto.h
+HDR OK      evp.h
+OPENSSL_HEADERS OK
+OPENSSL_PC OK 3.0.15
+pkg-config openssl: OK
+
+===== 1b curl check =====
+-rw-r--r--. 1 u0_a424 u0_a424 1080902 Oct 24 20:25 /data/data/com.termux/files/home/win32/lib/libcurl.a
+-rwxr-xr-x. 1 u0_a424 u0_a424    1000 Oct 24 20:25 /data/data/com.termux/files/home/win32/lib/libcurl.la
+LIBCURL OK
+
+===== 2 libimobiledevice 1.4.0 =====
+IMD_CONFIGURE OK
+checking for libusbmuxd-2.0 >= 2.0.2... yes
+checking for libplist-2.0 >= 2.3.0... yes
+checking for libimobiledevice-glue-1.0 >= 1.3.0... yes
+checking for libtatsu-1.0 >= 1.0.3... yes
+checking for openssl >= 0.9.8... yes
+IMD_MAKE OK
+IMD_HEADER OK
+IMD OK 1.4.0
+
+===== 3 pkg-config =====
+found   libimobiledevice-1.0 1.4.0
+found   libirecovery-1.0 1.3.1-12-g93c117c
+found   libusb-1.0 1.0.30
+found   libplist-2.0 2.8.0
+found   openssl 3.0.15
+found   libcurl 8.11.1
+found   libssh2 1.11.1
+found   libtatsu-1.0 1.0.5-6-ge7d6ad1
+CF=[-I/data/data/com.termux/files/home/bsrc/win32shim -DLIBUSBMUXD_STATIC -DLIMD_GLUE_STATIC -DLIBPLIST_STATIC -DIRECV_STATIC -DTP_PLIST_HAS_MEM_FREE -DTP_PLIST_HAS_FMT_ARG -include compat_extra.h  -I/data/data/com.termux/files/home/win32/include -I/data/data/com.termux/files/home/win32/include -I/data/data/com.termux/files/home/win32/include/libusb-1.0 -I/data/data/com.termux/files/home/win32/include -I/data/data/com.termux/files/home/win32/include -DCURL_STATICLIB -I/data/data/com.termux/files/home/win32/include -I/data/data/com.termux/files/home/win32/include -I/data/data/com.termux/files/home/win32/include]
+LF=[ -L/data/data/com.termux/files/home/win32/lib -limobiledevice-1.0 -lplist-2.0 -L/data/data/com.termux/files/home/win32/lib -lirecovery-1.0 -L/data/data/com.termux/files/home/win32/lib -lusb-1.0 -L/data/data/com.termux/files/home/win32/lib -lplist-2.0 -L/data/data/com.termux/files/home/win32/lib -lssl -lcrypto -L/data/data/com.termux/files/home/win32/lib -lcurl -lbcrypt -ladvapi32 -lcrypt32 -lws2_32 -L/data/data/com.termux/files/home/win32/lib -lssh2 -lws2_32 -lssl -lcrypto -L/data/data/com.termux/files/home/win32/lib -ltatsu -lplist-2.0 -lws2_32 -liphlpapi -lcrypt32 -lsecur32 -lbcrypt -ladvapi32 -lgdi32 -luser32]
+
+===== 4 compile =====
+REACHED_COMPILE_STAGE
+PROJECT_BUILD_FAILED
+ld.lld: error: undefined symbol: __declspec(dllimport) _mobileactivation_create_activation_session_info
+>>> referenced by src/activation/activation.o:(_activation_get_session_info)
+>>> referenced by src/activation/session.o:(_session_get_info)
+NOTE: a relevant symbol '_mobileactivation_create_activation_session_info' is available in /data/data/com.termux/files/home/win32/lib/libimobiledevice-1.0.a but cannot be used because it is not an import library.
+
+ld.lld: error: undefined symbol: __declspec(dllimport) _mobileactivation_create_activation_info
+>>> referenced by src/activation/activation.o:(_activation_get_info)
+NOTE: a relevant symbol '_mobileactivation_create_activation_info' is available in /data/data/com.termux/files/home/win32/lib/libimobiledevice-1.0.a but cannot be used because it is not an import library.
+
+ld.lld: error: undefined symbol: __declspec(dllimport) _mobileactivation_activate
+>>> referenced by src/activation/activation.o:(_activation_submit_record)
+NOTE: a relevant symbol '_mobileactivation_activate' is available in /data/data/com.termux/files/home/win32/lib/libimobiledevice-1.0.a but cannot be used because it is not an import library.
+
+ld.lld: error: undefined symbol: __declspec(dllimport) _mobileactivation_activate_with_session
+>>> referenced by src/activation/activation.o:(_activation_submit_record_with_session)
+>>> referenced by src/activation/session.o:(_session_activate)
+NOTE: a relevant symbol '_mobileactivation_activate_with_session' is available in /data/data/com.termux/files/home/win32/lib/libimobiledevice-1.0.a but cannot be used because it is not an import library.
+
+ld.lld: error: undefined symbol: __declspec(dllimport) _mobileactivation_deactivate
+>>> referenced by src/activation/activation.o:(_activation_deactivate)
+NOTE: a relevant symbol '_mobileactivation_deactivate' is available in /data/data/com.termux/files/home/win32/lib/libimobiledevice-1.0.a but cannot be used because it is not an import library.
+
+ld.lld: error: undefined symbol: __declspec(dllimport) _lockdownd_get_value
+>>> referenced by src/activation/cert_extract.o:(_lookup_blob)
+>>> referenced by src/device/device.o:(_device_query_info)
+>>> referenced by src/device/device.o:(_device_query_info)
+>>> referenced 1 more times
+NOTE: a relevant symbol '_lockdownd_get_value' is available in /data/data/com.termux/files/home/win32/lib/libimobiledevice-1.0.a but cannot be used because it is not an import library.
+
+ld.lld: error: undefined symbol: __declspec(dllimport) _mobileactivation_create_activation_info_with_session
+>>> referenced by src/activation/session.o:(_session_create_activation_info)
+NOTE: a relevant symbol '_mobileactivation_create_activation_info_with_session' is available in /data/data/com.termux/files/home/win32/lib/libimobiledevice-1.0.a but cannot be used because it is not an import library.
+
+ld.lld: error: undefined symbol: __declspec(dllimport) _lockdownd_start_service
+>>> referenced by src/bypass/afc_utils.o:(_afc_connect_service)
+NOTE: a relevant symbol '_lockdownd_start_service' is available in /data/data/com.termux/files/home/win32/lib/libimobiledevice-1.0.a but cannot be used because it is not an import library.
+
+ld.lld: error: undefined symbol: __declspec(dllimport) _afc_client_new
+>>> referenced by src/bypass/afc_utils.o:(_afc_connect_service)
+NOTE: a relevant symbol '_afc_client_new' is available in /data/data/com.termux/files/home/win32/lib/libimobiledevice-1.0.a but cannot be used because it is not an import library.
+
+ld.lld: error: undefined symbol: __declspec(dllimport) _lockdownd_service_descriptor_free
+>>> referenced by src/bypass/afc_utils.o:(_afc_connect_service)
+NOTE: a relevant symbol '_lockdownd_service_descriptor_free' is available in /data/data/com.termux/files/home/win32/lib/libimobiledevice-1.0.a but cannot be used because it is not an import library.
+
+ld.lld: error: undefined symbol: __declspec(dllimport) _lockdownd_strerror
+>>> referenced by src/bypass/afc_utils.o:(_afc_connect_service)
+NOTE: a relevant symbol '_lockdownd_strerror' is available in /data/data/com.termux/files/home/win32/lib/libimobiledevice-1.0.a but cannot be used because it is not an import library.
+
+ld.lld: error: undefined symbol: __declspec(dllimport) _afc_client_free
+>>> referenced by src/bypass/afc_utils.o:(_afc_disconnect)
+NOTE: a relevant symbol '_afc_client_free' is available in /data/data/com.termux/files/home/win32/lib/libimobiledevice-1.0.a but cannot be used because it is not an import library.
+
+ld.lld: error: undefined symbol: __declspec(dllimport) _afc_file_open
+>>> referenced by src/bypass/afc_utils.o:(_afc_write_file)
+>>> referenced by src/bypass/afc_utils.o:(_afc_read_file)
+NOTE: a relevant symbol '_afc_file_open' is available in /data/data/com.termux/files/home/win32/lib/libimobiledevice-1.0.a but cannot be used because it is not an import library.
+
+ld.lld: error: undefined symbol: __declspec(dllimport) _afc_file_write
+>>> referenced by src/bypass/afc_utils.o:(_afc_write_file)
+NOTE: a relevant symbol '_afc_file_write' is available in /data/data/com.termux/files/home/win32/lib/libimobiledevice-1.0.a but cannot be used because it is not an import library.
+
+ld.lld: error: undefined symbol: __declspec(dllimport) _afc_file_close
+>>> referenced by src/bypass/afc_utils.o:(_afc_write_file)
+>>> referenced by src/bypass/afc_utils.o:(_afc_read_file)
+NOTE: a relevant symbol '_afc_file_close' is available in /data/data/com.termux/files/home/win32/lib/libimobiledevice-1.0.a but cannot be used because it is not an import library.
+
+ld.lld: error: undefined symbol: __declspec(dllimport) _afc_file_read
+>>> referenced by src/bypass/afc_utils.o:(_afc_read_file)
+NOTE: a relevant symbol '_afc_file_read' is available in /data/data/com.termux/files/home/win32/lib/libimobiledevice-1.0.a but cannot be used because it is not an import library.
+
+ld.lld: error: undefined symbol: __declspec(dllimport) _afc_read_directory
+>>> referenced by src/bypass/afc_utils.o:(_afc_list_dir)
+>>> referenced by src/bypass/deletescript.o:(_purge_directory)
+NOTE: a relevant symbol '_afc_read_directory' is available in /data/data/com.termux/files/home/win32/lib/libimobiledevice-1.0.a but cannot be used because it is not an import library.
+
+ld.lld: error: too many errors emitted, stopping now (use --error-limit=0 to see all errors)
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile:52: tr4mpass] Error 1
+make: Target 'all' not remade because of errors.

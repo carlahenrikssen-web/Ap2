@@ -1,0 +1,293 @@
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0  0      0   0      0   0      0      0      0                              0  0      0   0      0   0      0      0      0                              0
+  0      0   0      0   0      0      0      0                              0 74  1.04M  74 799.0k   0      0 410.9k      0   00:02   00:01   00:01 783.7k100  1.04M 100  1.04M   0      0 528.4k      0   00:02   00:02         783.7k100  1.04M 100  1.04M   0      0 528.3k      0   00:02   00:02         783.7k100  1.04M 100  1.04M   0      0 528.3k      0   00:02   00:02         783.7k
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether make supports nested variables... yes
+checking for sed... /data/data/com.termux/files/usr/bin/sed
+checking for a BSD-compatible install... /data/data/com.termux/files/usr/bin/install -c
+checking whether build environment is sane... yes
+checking for i686-w64-mingw32-strip... i686-w64-mingw32-strip
+checking for a race-free mkdir -p... /data/data/com.termux/files/usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking libssh2 version... 1.11.1
+checking build system type... aarch64-unknown-linux-android24
+checking host system type... i686-w64-mingw32
+checking whether make supports the include directive... yes (GNU style)
+checking for i686-w64-mingw32-gcc... i686-w64-mingw32-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.exe
+checking for suffix of executables... .exe
+checking whether we are cross compiling... yes
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether i686-w64-mingw32-gcc accepts -g... yes
+checking for i686-w64-mingw32-gcc option to enable C11 features... none needed
+checking whether i686-w64-mingw32-gcc understands -c and -o together... yes
+checking dependency style of i686-w64-mingw32-gcc... gcc3
+checking if _REENTRANT is already defined... no
+checking if _REENTRANT is actually needed... no
+checking if _REENTRANT is onwards defined... no
+checking for library containing socket... no
+checking for library containing inet_addr... no
+checking for i686-w64-mingw32-gcc... (cached) i686-w64-mingw32-gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether i686-w64-mingw32-gcc accepts -g... (cached) yes
+checking for i686-w64-mingw32-gcc option to enable C11 features... (cached) none needed
+checking whether i686-w64-mingw32-gcc understands -c and -o together... (cached) yes
+checking dependency style of i686-w64-mingw32-gcc... (cached) gcc3
+checking for i686-w64-mingw32-g++... i686-w64-mingw32-g++
+checking whether the compiler supports GNU C++... yes
+checking whether i686-w64-mingw32-g++ accepts -g... yes
+checking for i686-w64-mingw32-g++ option to enable C++11 features... none needed
+checking dependency style of i686-w64-mingw32-g++... gcc3
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking for sshd... /data/data/com.termux/files/usr/bin/sshd
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /data/data/com.termux/files/usr/bin/sed
+checking for grep that handles long lines and -e... /data/data/com.termux/files/usr/bin/grep
+checking for egrep... /data/data/com.termux/files/usr/bin/grep -E
+checking for fgrep... /data/data/com.termux/files/usr/bin/grep -F
+checking for ld used by i686-w64-mingw32-gcc... /data/data/com.termux/files/usr/bin/i686-w64-mingw32-ld
+checking if the linker (/data/data/com.termux/files/usr/bin/i686-w64-mingw32-ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /data/data/com.termux/files/usr/bin/i686-w64-mingw32-nm -B
+checking the name lister (/data/data/com.termux/files/usr/bin/i686-w64-mingw32-nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 32768
+checking how to convert aarch64-unknown-linux-android24 file names to i686-w64-mingw32 format... func_convert_file_nix_to_w32
+checking how to convert aarch64-unknown-linux-android24 file names to toolchain format... func_convert_file_noop
+checking for /data/data/com.termux/files/usr/bin/i686-w64-mingw32-ld option to reload object files... -r
+checking for i686-w64-mingw32-file... no
+checking for file... no
+checking for i686-w64-mingw32-objdump... i686-w64-mingw32-objdump
+checking how to recognize dependent libraries... file_magic file format (pei*-i386(.*architecture: i386)?|pe-arm-wince|pe-x86-64)
+checking for i686-w64-mingw32-dlltool... i686-w64-mingw32-dlltool
+checking how to associate runtime and link libraries... func_cygming_dll_for_implib
+checking for i686-w64-mingw32-ar... i686-w64-mingw32-ar
+checking for archiver @FILE support... @
+checking for i686-w64-mingw32-strip... (cached) i686-w64-mingw32-strip
+checking for i686-w64-mingw32-ranlib... i686-w64-mingw32-ranlib
+checking command to parse /data/data/com.termux/files/usr/bin/i686-w64-mingw32-nm -B output from i686-w64-mingw32-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /data/data/com.termux/files/usr/bin/dd
+checking how to truncate binary pipes... /data/data/com.termux/files/usr/bin/dd bs=4096 count=1
+checking for i686-w64-mingw32-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... no
+checking for i686-w64-mingw32-as... i686-w64-mingw32-as
+checking for i686-w64-mingw32-dlltool... (cached) i686-w64-mingw32-dlltool
+checking for i686-w64-mingw32-objdump... (cached) i686-w64-mingw32-objdump
+checking for objdir... .libs
+checking if i686-w64-mingw32-gcc supports -fno-rtti -fno-exceptions... yes
+checking for i686-w64-mingw32-gcc option to produce PIC... -DDLL_EXPORT -DPIC
+checking if i686-w64-mingw32-gcc PIC flag -DDLL_EXPORT -DPIC works... yes
+checking if i686-w64-mingw32-gcc static flag -static works... yes
+checking if i686-w64-mingw32-gcc supports -c -o file.o... yes
+checking if i686-w64-mingw32-gcc supports -c -o file.o... (cached) yes
+checking whether the i686-w64-mingw32-gcc linker (/data/data/com.termux/files/usr/bin/i686-w64-mingw32-ld) supports shared libraries... yes
+checking dynamic linker characteristics... Win32 ld.exe
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... i686-w64-mingw32-g++ -E
+checking for ld used by i686-w64-mingw32-g++... /data/data/com.termux/files/usr/bin/i686-w64-mingw32-ld
+checking if the linker (/data/data/com.termux/files/usr/bin/i686-w64-mingw32-ld) is GNU ld... yes
+checking whether the i686-w64-mingw32-g++ linker (/data/data/com.termux/files/usr/bin/i686-w64-mingw32-ld) supports shared libraries... yes
+grep: warning: stray \ before -
+checking for i686-w64-mingw32-g++ option to produce PIC... -DDLL_EXPORT -DPIC
+checking if i686-w64-mingw32-g++ PIC flag -DDLL_EXPORT -DPIC works... yes
+checking if i686-w64-mingw32-g++ static flag -static works... yes
+checking if i686-w64-mingw32-g++ supports -c -o file.o... yes
+checking if i686-w64-mingw32-g++ supports -c -o file.o... (cached) yes
+checking whether the i686-w64-mingw32-g++ linker (/data/data/com.termux/files/usr/bin/i686-w64-mingw32-ld) supports shared libraries... yes
+checking dynamic linker characteristics... Win32 ld.exe
+checking how to hardcode library paths into programs... immediate
+checking whether byte ordering is bigendian... no
+checking for i686-w64-mingw32-windres... i686-w64-mingw32-windres
+checking for windows.h... yes
+checking for i686-w64-mingw32-gcc option to enable large file support... -D_FILE_OFFSET_BITS=64
+checking for ld used by GCC... /data/data/com.termux/files/usr/bin/i686-w64-mingw32-ld
+checking if the linker (/data/data/com.termux/files/usr/bin/i686-w64-mingw32-ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking for libssl... yes
+checking how to link with libssl... /data/data/com.termux/files/home/win32/lib/libssl.a /data/data/com.termux/files/home/win32/lib/libcrypto.a
+checking for libz... no
+configure: Cannot find libz, disabling compression
+checking whether to enable compiler warnings as errors... no
+checking whether to enable pedantic and debug compiler options... checking how to run the C preprocessor... i686-w64-mingw32-gcc -E
+checking for egrep -e... (cached) /data/data/com.termux/files/usr/bin/grep -E
+checking if cpp -P is needed... no
+no
+checking whether to enable hidden symbols in the library... no
+checking whether to build example applications... no
+checking for errno.h... yes
+checking for fcntl.h... yes
+checking for stdio.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/uio.h... no
+checking for sys/select.h... no
+checking for sys/socket.h... no
+checking for sys/ioctl.h... no
+checking for sys/time.h... yes
+checking for arpa/inet.h... no
+checking for netinet/in.h... no
+checking for sys/un.h... no
+checking for poll... no
+checking for gettimeofday... yes
+checking for select... no
+checking for strtoll... yes
+checking for explicit_bzero... no
+checking for explicit_memset... no
+checking for memset_s... no
+checking for snprintf... yes
+checking for select in ws2_32... yes
+checking for size_t... yes
+checking for working alloca.h... no
+checking for alloca... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking non-blocking sockets style... nada
+configure: WARNING: non-block sockets disabled
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating tests/Makefile
+config.status: creating tests/ossfuzz/Makefile
+config.status: creating example/Makefile
+config.status: creating docs/Makefile
+config.status: creating libssh2.pc
+config.status: creating src/libssh2_config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+configure: summary of build options:
+
+  version:          1.11.1
+  Host type:        i686-w64-mingw32
+  Install prefix:   /data/data/com.termux/files/home/win32
+  Compiler:         i686-w64-mingw32-gcc
+  Compiler flags:   -O2 -std=gnu17
+  Library types:    Shared=no, Static=yes
+  Crypto library:   OpenSSL
+  WinCNG ECDSA:     no
+  zlib compression: disabled; no libz found
+  Clear memory:     yes
+  Deprecated APIs:  yes
+  Debug build:      no
+  Build examples:   no
+  Run Docker tests: yes
+  Run sshd tests:   yes
+  Path to sshd:     /data/data/com.termux/files/usr/bin/sshd (only for self-tests)
+
+Making all in src
+make[1]: Entering directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/src'
+make  all-am
+make[2]: Entering directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/src'
+  CC       agent.lo
+  CC       bcrypt_pbkdf.lo
+  CC       comp.lo
+  CC       channel.lo
+  CC       chacha.lo
+  CC       crypto.lo
+  CC       cipher-chachapoly.lo
+  CC       crypt.lo
+  CC       global.lo
+  CC       keepalive.lo
+  CC       hostkey.lo
+  CC       kex.lo
+  CC       knownhost.lo
+  CC       mac.lo
+  CC       misc.lo
+  CC       packet.lo
+  CC       pem.lo
+  CC       poly1305.lo
+  CC       publickey.lo
+  CC       scp.lo
+  CC       session.lo
+  CC       sftp.lo
+  CC       transport.lo
+  CC       userauth.lo
+  CC       userauth_kbd_packet.lo
+  CC       version.lo
+  CCLD     libssh2.la
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/src'
+make[1]: Leaving directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/src'
+Making all in docs
+make[1]: Entering directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/docs'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/docs'
+Making all in tests
+make[1]: Entering directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/tests'
+Making all in ossfuzz
+make[2]: Entering directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/tests/ossfuzz'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/tests/ossfuzz'
+make[2]: Entering directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/tests'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/tests'
+make[1]: Leaving directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/tests'
+make[1]: Entering directory '/data/data/com.termux/files/home/src/libssh2-1.11.1'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/data/data/com.termux/files/home/src/libssh2-1.11.1'
+Making install in src
+make[1]: Entering directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/src'
+make[2]: Entering directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/src'
+ /data/data/com.termux/files/usr/bin/mkdir -p '/data/data/com.termux/files/home/win32/lib'
+ /data/data/com.termux/files/usr/bin/bash ../libtool   --mode=install /data/data/com.termux/files/usr/bin/install -c   libssh2.la '/data/data/com.termux/files/home/win32/lib'
+libtool: install: /data/data/com.termux/files/usr/bin/install -c .libs/libssh2.lai /data/data/com.termux/files/home/win32/lib/libssh2.la
+libtool: install: /data/data/com.termux/files/usr/bin/install -c .libs/libssh2.a /data/data/com.termux/files/home/win32/lib/libssh2.a
+libtool: install: chmod 644 /data/data/com.termux/files/home/win32/lib/libssh2.a
+libtool: install: i686-w64-mingw32-ranlib /data/data/com.termux/files/home/win32/lib/libssh2.a
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/src'
+make[1]: Leaving directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/src'
+Making install in docs
+make[1]: Entering directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/docs'
+make[2]: Entering directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/docs'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /data/data/com.termux/files/usr/bin/mkdir -p '/data/data/com.termux/files/home/win32/share/man/man3'
+ /data/data/com.termux/files/usr/bin/install -c -m 644 libssh2_agent_connect.3 libssh2_agent_disconnect.3 libssh2_agent_free.3 libssh2_agent_get_identity.3 libssh2_agent_get_identity_path.3 libssh2_agent_init.3 libssh2_agent_list_identities.3 libssh2_agent_set_identity_path.3 libssh2_agent_sign.3 libssh2_agent_userauth.3 libssh2_banner_set.3 libssh2_base64_decode.3 libssh2_channel_close.3 libssh2_channel_direct_streamlocal_ex.3 libssh2_channel_direct_tcpip.3 libssh2_channel_direct_tcpip_ex.3 libssh2_channel_eof.3 libssh2_channel_exec.3 libssh2_channel_flush.3 libssh2_channel_flush_ex.3 libssh2_channel_flush_stderr.3 libssh2_channel_forward_accept.3 libssh2_channel_forward_cancel.3 libssh2_channel_forward_listen.3 libssh2_channel_forward_listen_ex.3 libssh2_channel_free.3 libssh2_channel_get_exit_signal.3 libssh2_channel_get_exit_status.3 libssh2_channel_handle_extended_data.3 libssh2_channel_handle_extended_data2.3 libssh2_channel_ignore_extended_data.3 libssh2_channel_open_ex.3 libssh2_channel_open_session.3 libssh2_channel_process_startup.3 libssh2_channel_read.3 libssh2_channel_read_ex.3 libssh2_channel_read_stderr.3 libssh2_channel_receive_window_adjust.3 libssh2_channel_receive_window_adjust2.3 libssh2_channel_request_auth_agent.3 '/data/data/com.termux/files/home/win32/share/man/man3'
+ /data/data/com.termux/files/usr/bin/install -c -m 644 libssh2_channel_request_pty.3 libssh2_channel_request_pty_ex.3 libssh2_channel_request_pty_size.3 libssh2_channel_request_pty_size_ex.3 libssh2_channel_send_eof.3 libssh2_channel_set_blocking.3 libssh2_channel_setenv.3 libssh2_channel_setenv_ex.3 libssh2_channel_shell.3 libssh2_channel_signal_ex.3 libssh2_channel_subsystem.3 libssh2_channel_wait_closed.3 libssh2_channel_wait_eof.3 libssh2_channel_window_read.3 libssh2_channel_window_read_ex.3 libssh2_channel_window_write.3 libssh2_channel_window_write_ex.3 libssh2_channel_write.3 libssh2_channel_write_ex.3 libssh2_channel_write_stderr.3 libssh2_channel_x11_req.3 libssh2_channel_x11_req_ex.3 libssh2_crypto_engine.3 libssh2_exit.3 libssh2_free.3 libssh2_hostkey_hash.3 libssh2_init.3 libssh2_keepalive_config.3 libssh2_keepalive_send.3 libssh2_knownhost_add.3 libssh2_knownhost_addc.3 libssh2_knownhost_check.3 libssh2_knownhost_checkp.3 libssh2_knownhost_del.3 libssh2_knownhost_free.3 libssh2_knownhost_get.3 libssh2_knownhost_init.3 libssh2_knownhost_readfile.3 libssh2_knownhost_readline.3 libssh2_knownhost_writefile.3 '/data/data/com.termux/files/home/win32/share/man/man3'
+ /data/data/com.termux/files/usr/bin/install -c -m 644 libssh2_knownhost_writeline.3 libssh2_poll.3 libssh2_poll_channel_read.3 libssh2_publickey_add.3 libssh2_publickey_add_ex.3 libssh2_publickey_init.3 libssh2_publickey_list_fetch.3 libssh2_publickey_list_free.3 libssh2_publickey_remove.3 libssh2_publickey_remove_ex.3 libssh2_publickey_shutdown.3 libssh2_scp_recv.3 libssh2_scp_recv2.3 libssh2_scp_send.3 libssh2_scp_send64.3 libssh2_scp_send_ex.3 libssh2_session_abstract.3 libssh2_session_banner_get.3 libssh2_session_banner_set.3 libssh2_session_block_directions.3 libssh2_session_callback_set.3 libssh2_session_callback_set2.3 libssh2_session_disconnect.3 libssh2_session_disconnect_ex.3 libssh2_session_flag.3 libssh2_session_free.3 libssh2_session_get_blocking.3 libssh2_session_get_read_timeout.3 libssh2_session_get_timeout.3 libssh2_session_handshake.3 libssh2_session_hostkey.3 libssh2_session_init.3 libssh2_session_init_ex.3 libssh2_session_last_errno.3 libssh2_session_last_error.3 libssh2_session_method_pref.3 libssh2_session_methods.3 libssh2_session_set_blocking.3 libssh2_session_set_last_error.3 libssh2_session_set_read_timeout.3 '/data/data/com.termux/files/home/win32/share/man/man3'
+ /data/data/com.termux/files/usr/bin/install -c -m 644 libssh2_session_set_timeout.3 libssh2_session_startup.3 libssh2_session_supported_algs.3 libssh2_sftp_close.3 libssh2_sftp_close_handle.3 libssh2_sftp_closedir.3 libssh2_sftp_fsetstat.3 libssh2_sftp_fstat.3 libssh2_sftp_fstat_ex.3 libssh2_sftp_fstatvfs.3 libssh2_sftp_fsync.3 libssh2_sftp_get_channel.3 libssh2_sftp_init.3 libssh2_sftp_last_error.3 libssh2_sftp_lstat.3 libssh2_sftp_mkdir.3 libssh2_sftp_mkdir_ex.3 libssh2_sftp_open.3 libssh2_sftp_open_ex.3 libssh2_sftp_open_ex_r.3 libssh2_sftp_open_r.3 libssh2_sftp_opendir.3 libssh2_sftp_posix_rename.3 libssh2_sftp_posix_rename_ex.3 libssh2_sftp_read.3 libssh2_sftp_readdir.3 libssh2_sftp_readdir_ex.3 libssh2_sftp_readlink.3 libssh2_sftp_realpath.3 libssh2_sftp_rename.3 libssh2_sftp_rename_ex.3 libssh2_sftp_rewind.3 libssh2_sftp_rmdir.3 libssh2_sftp_rmdir_ex.3 libssh2_sftp_seek.3 libssh2_sftp_seek64.3 libssh2_sftp_setstat.3 libssh2_sftp_shutdown.3 libssh2_sftp_stat.3 libssh2_sftp_stat_ex.3 '/data/data/com.termux/files/home/win32/share/man/man3'
+ /data/data/com.termux/files/usr/bin/install -c -m 644 libssh2_sftp_statvfs.3 libssh2_sftp_symlink.3 libssh2_sftp_symlink_ex.3 libssh2_sftp_tell.3 libssh2_sftp_tell64.3 libssh2_sftp_unlink.3 libssh2_sftp_unlink_ex.3 libssh2_sftp_write.3 libssh2_sign_sk.3 libssh2_trace.3 libssh2_trace_sethandler.3 libssh2_userauth_authenticated.3 libssh2_userauth_banner.3 libssh2_userauth_hostbased_fromfile.3 libssh2_userauth_hostbased_fromfile_ex.3 libssh2_userauth_keyboard_interactive.3 libssh2_userauth_keyboard_interactive_ex.3 libssh2_userauth_list.3 libssh2_userauth_password.3 libssh2_userauth_password_ex.3 libssh2_userauth_publickey.3 libssh2_userauth_publickey_fromfile.3 libssh2_userauth_publickey_fromfile_ex.3 libssh2_userauth_publickey_frommemory.3 libssh2_userauth_publickey_sk.3 libssh2_version.3 '/data/data/com.termux/files/home/win32/share/man/man3'
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/docs'
+make[1]: Leaving directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/docs'
+Making install in tests
+make[1]: Entering directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/tests'
+Making install in ossfuzz
+make[2]: Entering directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/tests/ossfuzz'
+make[3]: Entering directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/tests/ossfuzz'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/tests/ossfuzz'
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/tests/ossfuzz'
+make[2]: Entering directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/tests'
+make[3]: Entering directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/tests'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/tests'
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/tests'
+make[1]: Leaving directory '/data/data/com.termux/files/home/src/libssh2-1.11.1/tests'
+make[1]: Entering directory '/data/data/com.termux/files/home/src/libssh2-1.11.1'
+make[2]: Entering directory '/data/data/com.termux/files/home/src/libssh2-1.11.1'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /data/data/com.termux/files/usr/bin/mkdir -p '/data/data/com.termux/files/home/win32/include'
+ /data/data/com.termux/files/usr/bin/install -c -m 644 include/libssh2.h include/libssh2_publickey.h include/libssh2_sftp.h '/data/data/com.termux/files/home/win32/include'
+ /data/data/com.termux/files/usr/bin/mkdir -p '/data/data/com.termux/files/home/win32/lib/pkgconfig'
+ /data/data/com.termux/files/usr/bin/install -c -m 644 libssh2.pc '/data/data/com.termux/files/home/win32/lib/pkgconfig'
+make[2]: Leaving directory '/data/data/com.termux/files/home/src/libssh2-1.11.1'
+make[1]: Leaving directory '/data/data/com.termux/files/home/src/libssh2-1.11.1'

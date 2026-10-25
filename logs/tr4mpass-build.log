@@ -1,0 +1,52 @@
+Package libimobiledevice-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libimobiledevice-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libimobiledevice-1.0', required by 'virtual:world', not found
+Package 'openssl', required by 'virtual:world', not found
+Package libimobiledevice-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libimobiledevice-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libimobiledevice-1.0', required by 'virtual:world', not found
+Package 'openssl', required by 'virtual:world', not found
+=== pkg-config visibility ===
+MISSING  libimobiledevice-1.0
+found    libirecovery-1.0
+found    libusb-1.0
+found    libplist-2.0
+MISSING  openssl
+found    libcurl
+found    libssh2
+found    libtatsu-1.0
+=== curl header ===
+-rw-r--r-- 1 runner runner 136671 Oct 24 13:20 /home/runner/win32/include/curl/curl.h
+Makefile:12: Library libimobiledevice-1.0 not found by pkg-config
+Makefile:12: Library openssl not found by pkg-config
+find src -name '*.o' -delete
+rm -f tr4mpass tests/run_tests tests/run_mock_tests .build-flags tests/chip_db_canary.bin
+find tests -name '*.o' -delete 2>/dev/null || true
+Makefile:12: Library libimobiledevice-1.0 not found by pkg-config
+Makefile:12: Library openssl not found by pkg-config
+i686-w64-mingw32-gcc -O2 -std=c99 -Wall -D_GNU_SOURCE -Iinclude -Iwin32shim -include win32shim.h  -Iinclude -c -o src/bypass/path_a_ramdisk_poll.o src/bypass/path_a_ramdisk_poll.c
+i686-w64-mingw32-gcc -O2 -std=c99 -Wall -D_GNU_SOURCE -Iinclude -Iwin32shim -include win32shim.h  -Iinclude -c -o src/bypass/path_b.o src/bypass/path_b.c
+i686-w64-mingw32-gcc -O2 -std=c99 -Wall -D_GNU_SOURCE -Iinclude -Iwin32shim -include win32shim.h  -Iinclude -c -o src/bypass/afc_utils.o src/bypass/afc_utils.c
+./tests/chip_db_canary.bin: 1: MZêˇˇ∏@Ä∫¥: not found
+./tests/chip_db_canary.bin: 2: Syntax error: ")" unexpected
+make: *** [Makefile:85: .chip-db-canary] Error 2
+make: *** Waiting for unfinished jobs....
+src/bypass/path_a_ramdisk_poll.c:16:10: fatal error: netinet/in.h: No such file or directory
+   16 | #include <netinet/in.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:54: src/bypass/path_a_ramdisk_poll.o] Error 1
+src/bypass/path_b.c:16:10: fatal error: plist/plist.h: No such file or directory
+   16 | #include <plist/plist.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+src/bypass/afc_utils.c:10:10: fatal error: libimobiledevice/afc.h: No such file or directory
+   10 | #include <libimobiledevice/afc.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:54: src/bypass/path_b.o] Error 1
+make: *** [Makefile:54: src/bypass/afc_utils.o] Error 1
+ls: cannot access 'tr4mpass.exe': No such file or directory
+tr4mpass.exe: cannot open `tr4mpass.exe' (No such file or directory)

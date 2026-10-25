@@ -1,0 +1,183 @@
+Cloning into 'libusb'...
+checking for i686-w64-mingw32-gcc... i686-w64-mingw32-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.exe
+checking for suffix of executables... .exe
+checking whether we are cross compiling... yes
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether i686-w64-mingw32-gcc accepts -g... yes
+checking for i686-w64-mingw32-gcc option to enable C23 features... -std=gnu23
+checking whether i686-w64-mingw32-gcc -std=gnu23 understands -c and -o together... yes
+checking for i686-w64-mingw32-g++... i686-w64-mingw32-g++
+checking whether the compiler supports GNU C++... yes
+checking whether i686-w64-mingw32-g++ accepts -g... yes
+checking for inline... inline
+checking for a BSD-compatible install... /data/data/com.termux/files/usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for i686-w64-mingw32-strip... i686-w64-mingw32-strip
+checking for a race-free mkdir -p... /data/data/com.termux/files/usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports the include directive... yes (GNU style)
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '10424' is supported by ustar format... yes
+checking whether GID '10424' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking dependency style of i686-w64-mingw32-gcc -std=gnu23... gcc3
+checking dependency style of i686-w64-mingw32-g++... gcc3
+checking build system type... aarch64-unknown-linux-android24
+checking host system type... i686-w64-mingw32
+checking how to print strings... printf
+checking for a sed that does not truncate output... /data/data/com.termux/files/usr/bin/sed
+checking for grep that handles long lines and -e... /data/data/com.termux/files/usr/bin/grep
+checking for egrep... /data/data/com.termux/files/usr/bin/grep -E
+checking for fgrep... /data/data/com.termux/files/usr/bin/grep -F
+checking for ld used by i686-w64-mingw32-gcc -std=gnu23... /data/data/com.termux/files/usr/bin/i686-w64-mingw32-ld
+checking if the linker (/data/data/com.termux/files/usr/bin/i686-w64-mingw32-ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /data/data/com.termux/files/usr/bin/i686-w64-mingw32-nm -B
+checking the name lister (/data/data/com.termux/files/usr/bin/i686-w64-mingw32-nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 32768
+checking how to convert aarch64-unknown-linux-android24 file names to i686-w64-mingw32 format... func_convert_file_nix_to_w32
+checking how to convert aarch64-unknown-linux-android24 file names to toolchain format... func_convert_file_noop
+checking for /data/data/com.termux/files/usr/bin/i686-w64-mingw32-ld option to reload object files... -r
+checking for file... :
+checking for i686-w64-mingw32-objdump... i686-w64-mingw32-objdump
+checking how to recognize dependent libraries... file_magic file format (pei*-i386(.*architecture: i386)?|pe-arm-wince|pe-x86-64|pe-aarch64)
+checking for i686-w64-mingw32-dlltool... i686-w64-mingw32-dlltool
+checking how to associate runtime and link libraries... func_cygming_dll_for_implib
+checking for i686-w64-mingw32-ranlib... i686-w64-mingw32-ranlib
+checking for i686-w64-mingw32-ar... i686-w64-mingw32-ar
+checking for archiver @FILE support... @
+checking for i686-w64-mingw32-strip... (cached) i686-w64-mingw32-strip
+checking command to parse /data/data/com.termux/files/usr/bin/i686-w64-mingw32-nm -B output from i686-w64-mingw32-gcc -std=gnu23 object... ok
+checking for sysroot... no
+checking for a working dd... /data/data/com.termux/files/usr/bin/dd
+checking how to truncate binary pipes... /data/data/com.termux/files/usr/bin/dd bs=4096 count=1
+checking for i686-w64-mingw32-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... no
+checking which variant of shared library versioning to provide... (default) aix
+checking for objdir... .libs
+checking if i686-w64-mingw32-gcc -std=gnu23 supports -fno-rtti -fno-exceptions... yes
+checking for i686-w64-mingw32-gcc -std=gnu23 option to produce PIC... -DDLL_EXPORT -DPIC
+checking if i686-w64-mingw32-gcc -std=gnu23 PIC flag -DDLL_EXPORT -DPIC works... yes
+checking if i686-w64-mingw32-gcc -std=gnu23 static flag -static works... yes
+checking if i686-w64-mingw32-gcc -std=gnu23 supports -c -o file.o... yes
+checking if i686-w64-mingw32-gcc -std=gnu23 supports -c -o file.o... (cached) yes
+checking whether the i686-w64-mingw32-gcc -std=gnu23 linker (/data/data/com.termux/files/usr/bin/i686-w64-mingw32-ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... yes
+checking dynamic linker characteristics... Win32 ld.exe
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... i686-w64-mingw32-g++ -E
+checking for ld used by i686-w64-mingw32-g++... /data/data/com.termux/files/usr/bin/i686-w64-mingw32-ld
+checking if the linker (/data/data/com.termux/files/usr/bin/i686-w64-mingw32-ld) is GNU ld... yes
+checking whether the i686-w64-mingw32-g++ linker (/data/data/com.termux/files/usr/bin/i686-w64-mingw32-ld) supports shared libraries... yes
+checking for i686-w64-mingw32-g++ option to produce PIC... -DDLL_EXPORT -DPIC
+checking if i686-w64-mingw32-g++ PIC flag -DDLL_EXPORT -DPIC works... yes
+checking if i686-w64-mingw32-g++ static flag -static works... yes
+checking if i686-w64-mingw32-g++ supports -c -o file.o... yes
+checking if i686-w64-mingw32-g++ supports -c -o file.o... (cached) yes
+checking whether the i686-w64-mingw32-g++ linker (/data/data/com.termux/files/usr/bin/i686-w64-mingw32-ld) supports shared libraries... yes
+checking dynamic linker characteristics... Win32 ld.exe
+checking how to hardcode library paths into programs... immediate
+checking for i686-w64-mingw32-windres... i686-w64-mingw32-windres
+checking source identification for LIBUSB_DESCRIBE... git
+checking if i686-w64-mingw32-gcc -std=gnu23 supports -std=gnu11... yes
+checking operating system... Windows
+checking for struct timespec... yes
+checking for sys/time.h... yes
+checking for doxygen... no
+checking if linker supports --add-stdcall-alias... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating libusb-1.0.pc
+config.status: creating Makefile
+config.status: creating libusb/Makefile
+config.status: creating examples/Makefile
+config.status: creating tests/Makefile
+config.status: creating tests/fuzz/Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/doxygen.cfg
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make  all-recursive
+make[1]: Entering directory '/data/data/com.termux/files/home/bsrc/libusb'
+Making all in libusb
+make[2]: Entering directory '/data/data/com.termux/files/home/bsrc/libusb/libusb'
+  GEN      regen-version-describe
+make  all-am
+make[3]: Entering directory '/data/data/com.termux/files/home/bsrc/libusb/libusb'
+  CC       core.lo
+  CC       hotplug.lo
+  CC       descriptor.lo
+  CC       io.lo
+  CC       sync.lo
+  CC       strerror.lo
+  RC       libusb-1.0.lo
+  CC       os/events_windows.lo
+  CC       os/threads_windows.lo
+  CC       os/windows_usbdk.lo
+  CC       os/windows_common.lo
+  CC       os/windows_winusb.lo
+  CCLD     libusb-1.0.la
+  DLLTOOL  .libs/libusb-1.0.dll.a
+make[3]: Leaving directory '/data/data/com.termux/files/home/bsrc/libusb/libusb'
+make[2]: Leaving directory '/data/data/com.termux/files/home/bsrc/libusb/libusb'
+make[2]: Entering directory '/data/data/com.termux/files/home/bsrc/libusb'
+make[2]: Leaving directory '/data/data/com.termux/files/home/bsrc/libusb'
+make[1]: Leaving directory '/data/data/com.termux/files/home/bsrc/libusb'
+Making install in libusb
+make[1]: Entering directory '/data/data/com.termux/files/home/bsrc/libusb/libusb'
+  GEN      regen-version-describe
+make  install-am
+make[2]: Entering directory '/data/data/com.termux/files/home/bsrc/libusb/libusb'
+  GEN      regen-version-describe
+  CC       core.lo
+  RC       libusb-1.0.lo
+  CCLD     libusb-1.0.la
+  DLLTOOL  .libs/libusb-1.0.dll.a
+make[3]: Entering directory '/data/data/com.termux/files/home/bsrc/libusb/libusb'
+  GEN      regen-version-describe
+ /data/data/com.termux/files/usr/bin/mkdir -p '/data/data/com.termux/files/home/win32/lib'
+ /bin/sh ../libtool   --mode=install /data/data/com.termux/files/usr/bin/install -c   libusb-1.0.la '/data/data/com.termux/files/home/win32/lib'
+libtool: install: /data/data/com.termux/files/usr/bin/install -c .libs/libusb-1.0.dll.a /data/data/com.termux/files/home/win32/lib/libusb-1.0.dll.a
+libtool: install: base_file=`basename libusb-1.0.la`
+libtool: install:  dlpath=`/bin/sh 2>&1 -c '. .libs/'libusb-1.0.la'i; echo libusb-1.0.dll'`
+libtool: install:  dldir=/data/data/com.termux/files/home/win32/lib/`dirname ../bin/libusb-1.0.dll`
+libtool: install:  test -d /data/data/com.termux/files/home/win32/lib/../bin || mkdir -p /data/data/com.termux/files/home/win32/lib/../bin
+libtool: install:  /data/data/com.termux/files/usr/bin/install -c .libs/libusb-1.0.dll /data/data/com.termux/files/home/win32/lib/../bin/libusb-1.0.dll
+libtool: install:  chmod a+x /data/data/com.termux/files/home/win32/lib/../bin/libusb-1.0.dll
+libtool: install:  if test -n '' && test -n 'i686-w64-mingw32-strip --strip-unneeded'; then eval 'i686-w64-mingw32-strip --strip-unneeded /data/data/com.termux/files/home/win32/lib/../bin/libusb-1.0.dll' || exit 0; fi
+libtool: install: /data/data/com.termux/files/usr/bin/install -c .libs/libusb-1.0.lai /data/data/com.termux/files/home/win32/lib/libusb-1.0.la
+ /data/data/com.termux/files/usr/bin/mkdir -p '/data/data/com.termux/files/home/win32/include/libusb-1.0'
+ /data/data/com.termux/files/usr/bin/install -c -m 644 libusb.h '/data/data/com.termux/files/home/win32/include/libusb-1.0'
+make[3]: Leaving directory '/data/data/com.termux/files/home/bsrc/libusb/libusb'
+make[2]: Leaving directory '/data/data/com.termux/files/home/bsrc/libusb/libusb'
+make[1]: Leaving directory '/data/data/com.termux/files/home/bsrc/libusb/libusb'
+make[1]: Entering directory '/data/data/com.termux/files/home/bsrc/libusb'
+make[2]: Entering directory '/data/data/com.termux/files/home/bsrc/libusb'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /data/data/com.termux/files/usr/bin/mkdir -p '/data/data/com.termux/files/home/win32/lib/pkgconfig'
+ /data/data/com.termux/files/usr/bin/install -c -m 644 libusb-1.0.pc '/data/data/com.termux/files/home/win32/lib/pkgconfig'
+make[2]: Leaving directory '/data/data/com.termux/files/home/bsrc/libusb'
+make[1]: Leaving directory '/data/data/com.termux/files/home/bsrc/libusb'
