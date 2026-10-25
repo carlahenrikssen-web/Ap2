@@ -27,15 +27,15 @@ fetch() { local d="$1" u="$2"; [ -d "$d" ] && return 0
 stage() { local n="$1"; shift; echo "########## START $n ##########"
   if ( set -e; "$@" ) > "$LOG/$n.log" 2>&1; then
     echo "########## OK $n ##########"; return 0
-  else echo "########## FAIL $n ##########"; tail -20 "$LOG/$n.log"; return 1; fi }
+  else echo "########## FAIL $n ##########"; cat "$LOG/$n.log"; return 1; fi }
 
 build_lib() { local d="$1" v="$2" repo="$3"; shift 3
   fetch "$d-$v" "https://github.com/libimobiledevice/$d/releases/download/$v/$d-$v.tar.bz2" \
-   || fetch "$d-$v" "https://github.com/$repo/archive/refs/tags/$v.tar.gz" \
-   || { rm -rf "$d-$v"; git clone --depth 1 "https://github.com/$repo.git" "$d-$v"; } || return 1
+    || fetch "$d-$v" "https://github.com/$repo/archive/refs/tags/$v.tar.gz" \
+    || { rm -rf "$d-$v"; git clone --depth 1 "https://github.com/$repo.git" "$d-$v"; } || return 1
   ( cd "$d-$v" && { [ -f configure ] || NOCONFIGURE=1 ./autogen.sh; } \
-      && ./configure --host="$HOST" --prefix="$PREFIX" --enable-static --disable-shared "$@" \
-      && make -j"$JOBS" && make install ) }
+    && ./configure --host="$HOST" --prefix="$PREFIX" --enable-static --disable-shared "$@" \
+    && make -j"$JOBS" && make install ) }
 
 s_openssl() { fetch openssl-3.0.15 https://github.com/openssl/openssl/releases/download/openssl-3.0.15/openssl-3.0.15.tar.gz || return 1
   cd openssl-3.0.15 && ./Configure android-arm64 -D__ANDROID_API__=$API no-shared no-tests \
@@ -45,8 +45,21 @@ s_libusb() { fetch libusb-1.0.27 https://github.com/libusb/libusb/releases/downl
   cd libusb-1.0.27 && ./configure --host="$HOST" --prefix="$PREFIX" \
     --enable-static --disable-shared --disable-udev && make -j"$JOBS" && make install; }
 
-# libplist 2.3.0: 2.6.0 clashes with libimobiledevice 1.3.0 (PLIST_FORMAT_* redefinition)
-s_plist() { build_lib libplist 2.3.0 libimobiledevice/libplist; }
+s_plist() {
+  fetch libplist-2.3.0 "https://github.com/libimobiledevice/libplist/releases/download/2.3.0/libplist-2.3.0.tar.bz2" \
+    || fetch libplist-2.3.0 "https://github.com/libimobiledevice/libplist/archive/refs/tags/2.3.0.tar.gz" \
+    || { rm -rf libplist-2.3.0; git clone --depth 1 https://github.com/libimobiledevice/libplist.git libplist-2.3.0; } || return 1
+  cd libplist-2.3.0
+  [ -f configure ] || NOCONFIGURE=1 ./autogen.sh
+  echo "===== configure --help (cython/python section) ====="
+  ./configure --help | grep -i -A2 "cython\|python"
+  echo "===== raw configure.ac cython/python block ====="
+  grep -n -A15 "AC_ARG_WITH(\[cython\]" configure.ac 2>/dev/null || echo "(no configure.ac present)"
+  echo "===== grep generated configure script itself ====="
+  grep -n "without-cython\|build_cython" configure | head -20
+  ./configure --host="$HOST" --prefix="$PREFIX" --enable-static --disable-shared --without-cython CYTHON=false \
+    && make -j"$JOBS" && make install
+}
 
 s_curl() { fetch curl-8.4.0 https://curl.se/download/curl-8.4.0.tar.xz || return 1
   cd curl-8.4.0 && ./configure --host="$HOST" --prefix="$PREFIX" \
@@ -71,7 +84,7 @@ s_irecv() { rm -rf libirecovery-m; git clone --depth 1 https://github.com/libimo
 s_glue() { build_lib libimobiledevice-glue 1.0.0 libimobiledevice/libimobiledevice-glue; }
 
 s_imd() { build_lib libimobiledevice 1.3.0 libimobiledevice/libimobiledevice \
-    --without-cython ac_cv_lib_pthread_pthread_once=yes; }
+  --without-cython ac_cv_lib_pthread_pthread_once=yes; }
 
 stage openssl  s_openssl  || true
 stage libusb   s_libusb   || true
@@ -82,20 +95,3 @@ stage usbmuxd  s_usbmuxd  || true
 stage irecovery s_irecv   || true
 stage glue     s_glue     || true
 stage imobiledevice s_imd || true
-
-echo "===== pkg-config visibility ====="
-LIBS="libimobiledevice-1.0 libirecovery-1.0 libusbmuxd-2.0 libplist-2.0 libusb-1.0 libssh2 libcurl openssl"
-for p in $LIBS; do pkg-config --exists "$p" && echo "OK $p $(pkg-config --modversion $p)" || echo "MISSING $p"; done
-
-cd "$SRCDIR"
-CF="$(pkg-config --cflags $LIBS 2>/dev/null || true)"
-LF="$(pkg-config --static --libs $LIBS 2>/dev/null || true)"
-# never lose the include path: pkg-config returns nothing if one .pc is absent
-case "$CF" in *"$PREFIX/include"*) ;; *) CF="-I$PREFIX/include $CF";; esac
-[ -n "$LF" ] || LF="-L$PREFIX/lib -limobiledevice-1.0 -lirecovery-1.0 -lusbmuxd-2.0 -lplist-2.0 -lssh2 -lcurl -lssl -lcrypto -lusb-1.0 -lm"
-SRCS=$(find src -name '*.c' ! -name '*.o' | tr '\n' ' ')
-echo "CFLAGS: $CF"
-echo "LDFLAGS: $LF"
-$CC -O2 -std=c99 -D_GNU_SOURCE -Iinclude $CF $SRCS -o "$OUT/tr4mpass-arm64" $LF -llog \
- || { echo "BUILD FAILED — see MISSING list above"; exit 1; }
-ls -l "$OUT/tr4mpass-arm64"
