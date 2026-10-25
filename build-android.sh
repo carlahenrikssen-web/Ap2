@@ -27,7 +27,7 @@ fetch() { local d="$1" u="$2"; [ -d "$d" ] && return 0
 stage() { local n="$1"; shift; echo "########## START $n ##########"
   if ( set -e; "$@" ) > "$LOG/$n.log" 2>&1; then
     echo "########## OK $n ##########"; return 0
-  else echo "########## FAIL $n ##########"; tail -60 "$LOG/$n.log"; return 1; fi }
+  else echo "########## FAIL $n ##########"; cat "$LOG/$n.log"; return 1; fi }
 
 build_lib() { local d="$1" v="$2" repo="$3"; shift 3
   fetch "$d-$v" "https://github.com/libimobiledevice/$d/releases/download/$v/$d-$v.tar.bz2" \
