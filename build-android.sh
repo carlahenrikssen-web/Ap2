@@ -45,13 +45,21 @@ s_libusb() { fetch libusb-1.0.27 https://github.com/libusb/libusb/releases/downl
   cd libusb-1.0.27 && ./configure --host="$HOST" --prefix="$PREFIX" \
     --enable-static --disable-shared --disable-udev && make -j"$JOBS" && make install; }
 
-# libplist 2.3.0: 2.6.0 clashes with libimobiledevice 1.3.0 (PLIST_FORMAT_* redefinition)
-# --without-cython alone does NOT reliably skip the Python devel check in this release's
-# configure (confirmed by CI log: full Python probe still ran and fatally failed trying
-# to link host x86_64 libpython against the aarch64 cross toolchain). Forcing CYTHON=false
-# pre-empts AC_PATH_PROG's own detection, so AC_PROG_CYTHON short-circuits before the
-# Python-devel/link check ever runs.
-s_plist() { build_lib libplist 2.3.0 libimobiledevice/libplist --without-cython CYTHON=false; }
+s_plist() {
+  fetch libplist-2.3.0 "https://github.com/libimobiledevice/libplist/releases/download/2.3.0/libplist-2.3.0.tar.bz2" \
+    || fetch libplist-2.3.0 "https://github.com/libimobiledevice/libplist/archive/refs/tags/2.3.0.tar.gz" \
+    || { rm -rf libplist-2.3.0; git clone --depth 1 https://github.com/libimobiledevice/libplist.git libplist-2.3.0; } || return 1
+  cd libplist-2.3.0
+  [ -f configure ] || NOCONFIGURE=1 ./autogen.sh
+  echo "===== configure --help (cython/python section) ====="
+  ./configure --help | grep -i -A2 "cython\|python"
+  echo "===== raw configure.ac cython/python block ====="
+  grep -n -A15 "AC_ARG_WITH(\[cython\]" configure.ac 2>/dev/null || echo "(no configure.ac present)"
+  echo "===== grep generated configure script itself ====="
+  grep -n "without-cython\|build_cython" configure | head -20
+  ./configure --host="$HOST" --prefix="$PREFIX" --enable-static --disable-shared --without-cython CYTHON=false \
+    && make -j"$JOBS" && make install
+}
 
 s_curl() { fetch curl-8.4.0 https://curl.se/download/curl-8.4.0.tar.xz || return 1
   cd curl-8.4.0 && ./configure --host="$HOST" --prefix="$PREFIX" \
